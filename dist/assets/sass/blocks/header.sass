@@ -1,0 +1,109 @@
+.header 
+  height: 160px
+  width: 100%
+  background-color: $purple
+
+.header__inner
+ padding-top:25px 
+ display: flex
+ flex-direction: column
+
+.header__input
+  border: 3px solid $white
+  border-radius: 500px
+  width: 580px
+  height: 50px
+  padding: 0 12px 0 30px
+  font-weight: 400
+  font-size: 16px
+
+  &::placeholder
+    font-weight: 400
+    font-size: 16px
+    color: $secondaryText
+
+.header__dropdown
+ width: 145px
+ display: flex
+ justify-content: space-between
+ align-items: center
+ img:first-of-type
+  width: 26px
+  height:26px
+ span 
+  color: $white
+  font-size: 16px
+  line-height: 150%
+ img:last-of-type
+  width: 11px
+  height: 6px
+
+
+.header__controls 
+ display: flex
+ justify-content: space-between
+
+.header__logo
+ width: 249px
+ height:40px
+
+.header__buttons
+ width: 236px
+ display: flex
+ justify-content: space-between
+ align-items: center
+ li
+  border-radius: 500px
+  width: 50px
+  height: 50px
+  background: rgba(255, 255, 255, 0.1)
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  img
+   width: 24px	
+
+.header__badge
+ position: absolute
+ right: -5px
+ top: -5px
+ border-radius: 22px
+ width: 20px
+ height: 20px 	
+ background-color: $yellow
+ display: flex
+ justify-content: center
+ align-items: center
+
+.header__navigation
+ margin-top: 25px
+ height: 60px
+ display: flex
+ justify-content: space-between
+ div
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: 15px
+  width: 253px
+  background-color: $yellow
+  span
+   font-family: 'oswald-bold'		
+   font-weight: 600
+   font-size: 20px
+   line-height: 150%
+   letter-spacing: 0.02em
+   text-transform: uppercase
+   color: $blackTitle
+
+
+.header__links
+ width: 1052px
+ display: flex
+ align-items: center
+ justify-content: space-between
+ li
+  cursor: pointer
+  font-size: 22px
+  font-family: 'oswald'		
