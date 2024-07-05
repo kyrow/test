@@ -1,0 +1,90 @@
+.sellers__inner
+ margin-top: 40px		
+ min-width: 100%
+ border: 1px solid $grayBorder 
+ border-radius: 5px
+ padding: 40px
+ h2
+  font-family: 'oswald-bold'
+  font-size: 30px
+  text-transform: uppercase	
+ @media(max-width: 1200px)  
+  padding: 20px 10px
+ @media(max-width: 798px)  
+  overflow: auto		 	
+
+.sellers__table
+ margin-top: 35px
+ min-width:680px	
+ width: 100%
+ border-bottom: 1px solid $grayBorder  
+ th, td
+  text-align: left
+  padding: 8px 0
+  border-top: 1px solid $grayBorder
+  font-size: 16px
+  text-overflow: ellipsis
+  overflow: hidden
+ th:nth-child(1), td:nth-child(1)
+  width: 25%
+ th:nth-child(2), td:nth-child(2)
+  width: 25%
+ th:nth-child(3), td:nth-child(3)
+  width: 15%
+ th:nth-child(4), td:nth-child(4)
+  width: 30%	 
+ @media(max-width: 1440px)  
+  th, td
+   font-size: 12px
+
+ .sellers__table__control	
+  display: flex	 
+  justify-content: space-between
+  div
+   display: flex
+   align-items: center	 
+   button
+    border: none
+    background-color: inherit
+    display: flex
+    gap: 5px
+    color: $purple			
+    &:last-child
+     color: $red
+    img
+     width:14px	
+  @media(max-width: 1440px)		
+   div
+    flex-direction: column	 
+    button
+     font-size: 10px				     		 		 	 			
+  @media(max-width: 1200px)		
+   div
+    flex-direction: row		 	 			 		
+    button
+     width:24px			
+     span
+      display: none	
+    img
+     width: 100%									
+
+
+.sellers__table_header
+ th,td 
+  font-size: 14px 	
+  color: $secondaryText
+
+.sellers__button 
+ margin-top: 30px
+ height: 50px 		
+ padding: 0 30px
+ text-transform: uppercase
+ color: $purple
+ border: 2px solid $purple
+ border-radius: 500px
+ font-size: 16px
+ font-family: 'oswald-bold'
+ background-color: inherit
+ @media(max-width: 768px)
+  font-size: 12px	
+  height: 40px 	

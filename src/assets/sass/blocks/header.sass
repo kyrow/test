@@ -1,7 +1,9 @@
 .header 
-  height: 160px
-  width: 100%
-  background-color: $purple
+ height: 160px
+ width: 100%
+ background-color: $purple
+ @media (max-width: 992px)
+  height: 140px	 
 
 .header__inner
  padding-top:25px 
@@ -9,18 +11,26 @@
  flex-direction: column
 
 .header__input
-  border: 3px solid $white
-  border-radius: 500px
-  width: 580px
-  height: 50px
-  padding: 0 12px 0 30px
-  font-weight: 400
-  font-size: 16px
+ border: 3px solid $white
+ border-radius: 500px
+ width: 580px
+ height: 50px
+ padding: 0 12px 0 30px
+ font-weight: 400
+ font-size: 16px
+ &::placeholder
+   font-weight: 400
+   font-size: 16px
+   color: $secondaryText
+ @media (max-width: 1440px)
+  width: 410px	 
+ @media (max-width: 1200px)
+  width: 380px
+ @media (max-width: 992px)
+  width: 300px
+  height: 40px
 
-  &::placeholder
-    font-weight: 400
-    font-size: 16px
-    color: $secondaryText
+
 
 .header__dropdown
  width: 145px
@@ -37,6 +47,20 @@
  img:last-of-type
   width: 11px
   height: 6px
+ @media (max-width: 1200px)
+  width:120px		
+  span
+   font-size: 12px
+ @media (max-width: 992px)
+  width: 85px
+  img:first-of-type
+   width: 20px
+   height: 20px
+  span
+   font-size: 10px
+  img:last-of-type
+   width: 10px
+   height: 6px	
 
 
 .header__controls 
@@ -46,6 +70,9 @@
 .header__logo
  width: 249px
  height:40px
+ @media (max-width: 992px)
+  width: 149px
+  height:30px
 
 .header__buttons
  width: 236px
@@ -62,7 +89,21 @@
   align-items: center
   position: relative
   img
-   width: 24px	
+   width: 24px
+ @media (max-width: 1200px)
+  width: 160px	
+  li
+   width:35px
+   height:35px
+   img
+    width: 16px	 
+ @media (max-width: 992px)
+  width: 130px
+  li
+   width:30px
+   height:30px
+   img
+    width: 12px	 									 	
 
 .header__badge
  position: absolute
@@ -72,9 +113,18 @@
  width: 20px
  height: 20px 	
  background-color: $yellow
+ color: $blackTitle
+ font-family: 'inter-bold'
+ font-size: 12px	 
  display: flex
  justify-content: center
  align-items: center
+ @media (max-width: 1200px)
+  width: 17px
+  height: 17px
+ @media (max-width: 992px)	 
+  width: 15px
+  height: 15px
 
 .header__navigation
  margin-top: 25px
@@ -96,6 +146,18 @@
    letter-spacing: 0.02em
    text-transform: uppercase
    color: $blackTitle
+  @media (max-width: 1200px)
+  width: 180px
+  span		
+   font-size: 16px
+ @media (max-width: 992px)
+   height: 50px
+   div 		 
+    width: 120px
+    span		
+     font-size: 10px
+    img
+     width:10px			  			
 
 
 .header__links
@@ -106,4 +168,16 @@
  li
   cursor: pointer
   font-size: 22px
-  font-family: 'oswald'		
+  font-family: 'oswald'
+ @media (max-width: 1440px)
+  width: 900px
+  li		
+   font-size: 18px	
+ @media (max-width: 1200px)
+  width: 700px
+  li		
+   font-size: 16px
+ @media (max-width: 992px)
+  width: 550px
+  li		
+   font-size: 12px	 			

@@ -1,0 +1,77 @@
+.paymentData__container 
+ margin-top: 50px
+ display: flex
+ gap: 30px
+ div
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  width: 280px
+  h2 		 
+   font-size: 24px
+   font-family: 'oswald'
+   color: $blackTitle	 
+  button
+   margin-top: 40px		
+   background-color: inherit
+   border: none
+   color: $purple	 
+   display: flex
+   gap: 5px
+   font-size: 16px	 	 	
+   img
+    width: 22px			  
+ @media (max-width: 767px)	 
+  margin-top: 0	
+  flex-direction: column 
+  align-items: flex-start
+  div
+   width: 100%
+   flex-direction: column-reverse
+   h2
+    margin-top: 30px
+    font-size: 18px		
+ @media (max-width: 1440px)	  	
+  div
+   width: 180px			 	 	 	
+  h2 		 
+   font-size: 20px		
+
+.paymentData__form
+ div
+  display: flex
+  flex-direction: row	
+  gap: 30px 		
+  input
+   border-radius: 5px
+   width: 192px
+   height: 60px
+   border: 1px solid $grayInputBorder 
+   padding-left: 25px
+ button
+  height: 50px
+  padding: 0px 30px
+  margin-top: 25px
+  display: flex
+  align-items: center	
+  background-color: $purple
+  text-transform: uppercase
+  border-radius: 500px
+  border: none			
+  font-size: 16px
+  font-family: 'oswald-bold'
+  color: $white	
+ @media (max-width: 1200px)	  
+  div
+   gap: 15px 				
+   input
+    width: 152px
+    height: 40px
+ button
+  height: 40px	 
+ @media (max-width: 767px)	  
+  div
+   flex-direction: column	 	
+   input
+    width: 100%
+ 

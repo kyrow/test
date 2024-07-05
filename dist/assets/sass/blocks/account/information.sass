@@ -1,5 +1,4 @@
 .accountInfo__inner
- padding-left:30px
  margin-top: 30px
  margin-bottom: 80px 
  display: flex
@@ -20,15 +19,28 @@
  text-transform: uppercase
  color:$blackTitle
  font-family: 'oswald-bold'
+ @media (max-width: 1440px)
+  margin-top:30px
 
 .accountInfo__sections
  margin-top:50px
+ @media (max-width: 1440px)
+  margin-top:30px
 
 .accountInfo__section__wrapper 
  width:1360px
  display: flex
  gap:30px
- flex-wrap: wrap	 			
+ flex-wrap: wrap
+ @media (max-width: 1920px)
+  width: 1100px	
+ @media (max-width: 1440px)
+  width: 900px	
+ @media (max-width: 1200px)
+  width: 720px
+ @media (max-width: 992px)
+  width: 100%	 			
+
 
 .accountInfo__section__container
  padding: 40px 40px 20px 40px
@@ -41,7 +53,33 @@
   font-size: 30px 
   font-family: 'oswald-bold'
   text-transform: uppercase
-  margin-bottom: 40px	 
+  margin-bottom: 40px
+ &:nth-child(1)
+  order:1
+ &:nth-child(2)
+  order:2
+ &:nth-child(3)
+  order:3
+ &:nth-child(4)
+  order:4	
+ @media (max-width: 1440px)
+  padding: 25px 25px 15px 25px
+  &:nth-child(3)
+   order: 4
+  &:nth-child(4)
+   order: 3 		
+ @media (max-width: 1200px)
+  padding: 15px 15px 10px 15px
+  &:nth-child(3)
+   order: 4
+  &:nth-child(4)
+   order: 3
+ @media (max-width: 767px)	 
+   width: 100%	 	
+
+		
+
+
 
 .accountInfo__section__description
  margin: 18px 0	
@@ -54,6 +92,7 @@
   display: flex
   gap: 10px
   align-items: center	
+	
 
 .accountInfo__contacts__content
  margin:30px 0
@@ -61,14 +100,25 @@
  gap:40px
  img
   width:220px
-  height: 220px	
+  height: 220px
+ @media (max-width: 1440px)
+  img
+   width:200px
+   height: 200px	
+ @media (max-width: 1200px)
+  img
+   width:180px
+   height: 180px
+ @media (max-width: 1200px)
+  flex-direction: column
+
 
 .accountInfo__contacts__info
  display: flex
  flex-direction: column	
  gap: 15px
  div
-  width: 365px
+  width: 438px
   display: flex
   justify-content: flex-start
   gap: 10px
@@ -81,6 +131,18 @@
    color: $generalText
  a
   text-align: center
+  color: $purple	
+ @media (max-width: 1440px)
+  div
+   width: 100%
+ @media (max-width: 1920px)
+  div
+   width: 308px	
+   span
+    width: 80px		
+    font-size: 14px
+   p
+    font-size: 14px
 
 .badge
  padding: 8px 15px
@@ -114,7 +176,19 @@
  gap: 10px
  margin: 30px 0 38px 0
  img
-   max-width: 352px
+  max-width: 468px
+ @media (max-width: 768px)  
+  img
+   max-width: 100%	
+ @media (max-width: 1920px)  
+  img
+   max-width: 338px	
+ @media (max-width: 1440px)  
+  img
+   max-width: 383px
+ @media (max-width: 1200px)  
+  img
+   max-width: 313px
 
 .accountInfo__discount__additional
  font-size: 14px
@@ -122,11 +196,62 @@
  margin-top: 20px
 
 .accountInfo__history__row
- width: 625px
+ width: 698px
  display: flex
+ align-items: center
  span
   margin: 17px 0
   display: block
   width:20%
+  a
+   font-size: 14px
+   color: $purple	
+ span:first-child
+  display: flex
+  font-family: 'inter-bold'	
+  font-size: 13px
+  text-transform: uppercase	
+  align-items: center	
+  gap: 8px		 
  span:nth-child(3),span:nth-child(4)
-  width:30%		
+  width:30%
+  display: flex
+  justify-content: space-between					
+ @media (max-width: 1920px)  
+  width: 568px
+ @media (max-width: 1440px)  
+  width: 848px
+ @media (max-width: 1200px)  
+  width: 688px
+ @media (max-width: 768px)  
+  width: 100%		
+	
+
+.accountInfo__history__finished
+ color:$finishedGreen
+ span:first-child
+  width:6px
+  height:6px
+  border-radius:100px
+  background-color: $finishedGreen			
+
+.accountInfo__history__canceled
+ color: $red
+ span:first-child
+  width:6px
+  height:6px
+  border-radius:100px
+  background-color: $red				
+
+.accountInfo__fine__content
+ padding-top:20px
+ width: 468px
+ height:100%
+ @media (max-width: 1920px)  
+  width: 338px	
+ @media (max-width: 1440px)  
+  width: 383px	  	
+ @media (max-width: 1200px)  
+  width: 313px	  
+ @media (max-width: 768px)  
+  width: 100%				
