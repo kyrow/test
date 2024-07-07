@@ -1,0 +1,67 @@
+.report__inner
+ border: 1px solid $grayBorder
+ border-radius: 5px
+ display: flex
+
+
+.report__navigation
+ width: 120px	
+ background-color: $grayBg
+ padding-top: 30px
+ @media(max-width: 1200px)
+  width: 50px	
+
+.report__navigationItem
+ width: 100%
+ height: 110px	
+ display: flex
+ flex-direction: column
+ justify-content: center
+ align-items: center
+ position: relative
+ img
+  width: 38px 	
+  height: 38px
+ span
+  font-size: 13px	
+  color: $secondaryText
+ @media(max-width: 1200px)
+  height: 80px		
+  img
+   width: 24px 	
+   height: 24px
+  span		
+   display: none
+	 
+.report__navigationItem__active
+ background-color: $white			
+ span
+  font-size: 13px	
+  color: $purple	
+
+.report__navigationItem__badge
+ position: absolute
+ top: 11px
+ right: 20px
+ width: 24px
+ height: 24px
+ display: flex
+ align-items: center
+ justify-content: center
+ border-radius: 22px
+ background-color: $yellow
+ font-size: 12px 
+ font-family: 'inter-bold'
+ color: $blackTitle
+ @media(max-width: 1200px)
+  width: 12px
+  height: 12px
+  top: 25px
+  right: 5px
+
+.report__content
+ width: 100%	
+ overflow: auto	  
+ padding: 40px	
+ @media(max-width: 1200px)
+  padding: 20px	

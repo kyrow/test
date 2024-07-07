@@ -129,20 +129,7 @@
 
 		
 		
-		<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-
-<body>
-	<div class="sellers__inner">
-
-		<h2>платежные данные</h2>
-
+		
 		
 		
 		<!DOCTYPE html>
@@ -155,37 +142,90 @@
 </head>
 
 <body>
-	<div class="paymentData__container">
+	<div class="reviews__inner">
 
-		<div>
-			<h2>Редактировать платежные данные</h2>
+		<div class="reviews__title">
+			<h2>отзывы</h2>
+			<div>
+				<span>Товар</span>
+				<span>Халат Вафельный Китай Размер S</span>
+			</div>
 			<button>
-				<img src="../../../../assets/img/icons/arrow.svg" /> Назад
+				<img src="../../../assets/img/icons/arrow.svg" alt="back" />
+				<span>Назад</span>
 			</button>
 		</div>
 
-		<form class="paymentData__form">
-			<div>
-				<div class="paymentData__form-input">
-					<label for="bin">БИН</label>
-					<input type="text" id="bin">
-				</div>
-				<div class="paymentData__form-input">
-					<label for="iik">ИИК</label>
-					<input type="text" id="iik">
-				</div>
-				<div class="paymentData__form-input">
-					<label for="bik">БИК</label>
-					<input type="text" id="bik">
+		<div class="reviews__content">
+			<div class="reviews__statystic">
+				<span>Всего отзывов: 10</span>
+				<span>Средняя оценка: 4.5</span>
+			</div>
+
+			<ul class="reviews__types">
+				<li class="reviews__types__active">Все</li>
+				<li>Положительные</li>
+				<li>Отрицательные</li>
+			</ul>
+
+			<table class="reviews__table">
+				<tr class="reviews__table-header">
+					<th>№ заказа</th>
+					<th>Автор</th>
+					<th>Отзыв</th>
+				</tr>
+				<tr class="reviews__row">
+					<td>1234567</td>
+					<td>Ахмет</td>
+					<td>
+						<ul class="reviews__rate">
+							<li>
+								<img src="../../../assets/img/icons/star.png" alt="star" />
+							</li>
+							<li>
+								<img src="../../../assets/img/icons/star.png" alt="star" />
+							</li>
+							<li>
+								<img src="../../../assets/img/icons/star.png" alt="star" />
+							</li>
+							<li>
+								<img src="../../../assets/img/icons/star.png" alt="star" />
+							</li>
+							<li>
+								<img src="../../../assets/img/icons/blankStar.png" alt="star" />
+							</li>
+						</ul>
+						<p>
+							Я оценил его легкость и воздухопроницаемость — идеальный вариант для использования после душа. К тому же,
+							удобный пояс и карманы делают его очень практичным для повседневного использования. Рекомендую всем, кто
+							ценит комфорт и качество! Я ценю его легкость и удобство.
+						</p>
+					</td>
+				</tr>
+
+			</table>
+
+			<div class="notification__pagination">
+				<ul class="notification__pagination-pages">
+					<li class="notification__pagination-pages__active">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>...</li>
+					<li>79</li>
+				</ul>
+				<button class="notification__pagination-button">
+					Следующая
+					<img src="../../../../assets/img/icons/arrow.svg" alt="next" />
+				</button>
+				<div class="notification__pagination-divider"></div>
+				<div class="notification__pagination-select">
+					<span>Перейти на</span>
+					<input />
+					<button>»</button>
 				</div>
 			</div>
-			<button>сохранить</button>
-		</form>
 
-	</div>
-</body>
-
-</html>
+		</div>
 
 	</div>
 </body>

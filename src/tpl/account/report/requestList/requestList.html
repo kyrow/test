@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="requestList__container">
+		<h2>обращения</h2>
+
+		<table class="requestList__table">
+			<tr>
+				<th>Тикет</th>
+				<th>Тема</th>
+				<th>Дата создания</th>
+				<th>Активность</th>
+				<th>Статус</th>
+				<th></th>
+			</tr>
+			<tr class="requestList__row">
+				<td>№12345</td>
+				<td>Добавление новой категории</td>
+				<td>22.04.24</td>
+				<td>26.04.24</td>
+				<td>
+					<div class="requestList__status requestList__status__active">
+						<div></div>
+						<span>ОТКРЫТО</span>
+					</div>
+				</td>
+				<td>
+					<button class="reqestList__openButton">посмотреть</button>
+				</td>
+			</tr>
+
+			<tr class="requestList__row">
+				<td>№12345</td>
+				<td>Добавление новой категории</td>
+				<td>22.04.24</td>
+				<td>26.04.24</td>
+				<td>
+					<div class="requestList__status">
+						<div></div>
+						<span>ОТКРЫТО</span>
+					</div>
+				</td>
+				<td>
+					<button class="reqestList__openButton">посмотреть</button>
+				</td>
+			</tr>
+		</table>
+
+		<button class="requestList__button">
+			добавить новое обращение
+		</button>
+
+	</div>
+</body>
+
+</html>

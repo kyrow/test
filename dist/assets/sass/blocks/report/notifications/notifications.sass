@@ -1,0 +1,142 @@
+.notifications__inner
+ h2
+  font-size: 30px
+  font-family: 'oswald-bold'	
+  color: $blackTitle	 
+  text-transform: uppercase  
+  		
+
+.notification__header
+ margin-top: 30px	
+ display: flex
+ justify-content: space-between
+ ul
+  display: flex	
+  gap:40px
+  li
+   font-size: 20px	
+   color: $purple	
+   border-bottom: 2px solid inherit
+   font-family: 'oswald'	   
+ button
+  padding-top: 10px	
+  font-size: 14px
+  padding: 0
+  background-color: inherit
+  color: $purple 		
+  border: none	
+  border-bottom: 1px dashed $purple
+ @media(max-width: 1920px)	 
+  ul
+   display: flex	
+   gap:30px
+   li
+    font-size: 18px
+ @media(max-width: 1440px)	 
+  ul
+   display: flex	
+   gap:20px
+   min-width: 200px
+   flex-wrap: wrap	 	 	
+   li
+    font-size: 14px	
+ @media(max-width: 767px)	 
+ flex-direction: column-reverse
+ ul
+  margin-top: 10px		
+ @media(min-width: 767px)	 
+  flex-direction: row
+
+.notification__header__selected
+ border-bottom: 2px solid $yellow
+ color: $blackTitle 
+
+.notification__container
+ margin-top: 30px
+ border-top:1px solid $grayInputBorder  
+  		
+.notification__containerItem
+ display: flex
+ justify-content: space-between
+ padding: 20px 0
+ border-bottom: 1px solid $grayInputBorder 
+ p
+  font-size: 16px	
+ span
+  min-width:110px
+  color: $secondaryText   		
+ @media(max-width: 1440px)	 
+  p
+   font-size: 12px	
+  span
+   min-width: 50px
+   font-size: 10px		 
+
+.notification__containerItem__active
+ position: relative	
+ div
+  width: 6px
+  height: 6px
+  border-radius: 100px		
+  background-color: $yellow	
+  position: absolute
+  top: 25px	
+  left: -15px
+
+.notification__pagination
+ margin-top: 40px		
+ display: flex
+ align-items: center 
+ gap: 30px 
+ @media(max-width: 992px) 
+  flex-direction: column
+  gap: 10px	
+ @media(max-width: 1200px) 
+  gap: 10px				
+
+.notification__pagination-pages
+ display: flex	
+ li
+  width: 44px
+  height: 44px
+  border-radius: 500px	
+  display: flex
+  justify-content: center
+  align-items: center				 		
+  	 	 
+.notification__pagination-pages__active
+ background-color: $grayBorder				 
+
+.notification__pagination-button
+ height: 24px	
+ display: flex
+ background-color: inherit
+ border: none 	
+ align-items: center  
+ gap: 14px
+ color: $purple
+ img
+  transform: rotate(180deg)    
+
+.notification__pagination-divider
+ height: 100%
+ width: 1px
+ background-color: $grayBorder 		
+
+.notification__pagination-select
+ display: flex
+ gap: 10px	 
+ align-items: center
+ input
+  height: 40px	
+  width: 50px	
+  border-radius: 5px
+  border: 1px solid $grayInputBorder
+ button
+  height: 40px
+  width: 40px					
+  border-radius: 5px
+  background-color: $purple
+  border: none
+  color: $white	
+  font-size: 24px
