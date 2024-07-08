@@ -1,0 +1,163 @@
+.orders_inner
+ border: 1px solid $grayBorder
+ border-radius: 5px
+ display: flex 
+ @media(max-width: 1200px) 
+  flex-direction: column	
+
+.orders__filterList 
+ height: 100%	
+ padding: 40px
+ background-color: $grayBg
+ display: flex
+ flex-direction: column
+ gap: 20px 
+ span
+  font-size: 24px
+  font-family: 'oswald'	 	  
+  color: $black	
+ ul
+  display: flex
+  flex-direction: column				
+  gap: 12px
+  li
+   display: flex
+   align-items: center
+   gap: 15px 	 	 	
+   input		
+    border: 1px solid $grayBorder
+    border-radius: 5px
+    width: 22px
+    height: 22px
+   label
+    font-size: 14px
+    color: $blackTitle			
+ @media(max-width: 1440px)
+  padding: 20px
+  ul
+   li
+    input		
+     width: 20px
+     height: 20px
+    label
+     font-size: 12px	
+ @media(max-width: 1200px) 
+   ul	
+    flex-direction: row	
+    flex-wrap: wrap
+    gap: 15px	
+    li			
+     width: 70px				
+     flex-direction: column				
+     gap: 5px
+
+.orders__container
+ padding: 40px	
+ h2
+  font-family: 'oswald-bold'
+  font-size: 30px 
+  text-transform: uppercase			 		
+  color: $blackTitle	
+ @media(max-width: 1440px)
+  padding: 20px	
+
+.orders__list
+ margin-top: 40px		
+ border-top: 1px solid $grayBorder  	 
+
+.orders__item
+ display: flex
+ padding: 40px 0
+ border-bottom: 1px solid $grayBorder   
+ @media(max-width: 767px) 
+  flex-direction: column
+  gap: 20px		
+ 		
+.orders__item-info
+ height: 114px	
+ display: flex
+ flex-direction: column 
+  
+
+.orders__item-status	
+ display: flex	 		
+ align-items: center
+ gap: 8px
+ border-radius: 500px
+ width: fit-content
+ padding: 8px 17px 	
+ background: rgba(133, 133, 133, 0.1)
+ text-transform: uppercase
+ font-family: 'inter-bold'
+ color: $blackTitle 
+ div
+  border-radius: 500px
+  width: 6px
+  height: 6px
+  background-color: $blackTitle
+ img
+  color: $blackTitle		
+ @media(max-width: 1440px)
+  font-size: 12px		
+  padding: 6px 12px 		
+
+.orders__item-dateInfo
+ margin-top: 12px	
+ display: flex
+ flex-direction: column		 
+ span
+  color: $secondaryText
+  span 
+   color: $blackTitle
+ @media(max-width: 1440px)
+  span 	
+   font-size: 12px	
+ @media(max-width: 1920px)
+  span 	
+   font-size: 14px	 	  
+
+.orders__item-pics
+ margin: 0 30px	
+ display: flex
+ overflow: scroll
+ gap: 15px
+ height: 114px 
+ img
+  border: 1px solid $grayBorder
+  border-radius: 5px	
+  height:100%
+  width: 114px
+  object-fit: cover		
+ @media(max-width: 767px) 			  		 
+  margin: 0 
+  
+
+.orders__control
+ display: flex
+ flex-direction: column
+ justify-content: center		
+ gap: 15px
+
+.orders__product-control
+ display: flex 
+ gap: 10px	
+ button
+  height:40px
+  border: 2px solid $purple
+  border-radius: 500px
+  padding: 0px 20px
+  color: $purple
+  background-color: inherit	
+ button:last-child
+  color: $red		
+  border: 2px solid $red		  		 
+
+.orders__logystic-control
+ button
+  border: none
+  color: $purple
+  background-color: inherit	 	
+  display: flex		
+  img
+   width: 14px		
+   margin-right: 7px 	

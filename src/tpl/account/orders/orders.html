@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<div class="orders_inner">
+		<div class="orders__filterList">
+			<span>Фильтр</span>
+			<ul>
+				<li>
+					<input type="checkbox" id="orders_new" name="orders_new" />
+					<label for="orders_new">Новые</label>
+				</li>
+				<li>
+					<input type="checkbox" id="orders_accepted" name="orders_accepted" />
+					<label for="orders_accepted">Принятые</label>
+				</li>
+				<li>
+					<input type="checkbox" id="orders_assembly" name="orders_assembly" />
+					<label for="orders_assembly">Сборка</label>
+				</li>
+				<li>
+					<input type="checkbox" id="orders_shipping" name="orders_shipping" />
+					<label for="orders_shipping">Отправка</label>
+				</li>
+				<li>
+					<input type="checkbox" id="orders_Transmission" name="orders_Transmission" />
+					<label for="orders_Transmission">Передача в КС</label>
+				</li>
+				<li>
+					<input type="checkbox" id="orders_TransmittedToCOP" name="orders_TransmittedToCOP" />
+					<label for="orders_TransmittedToCOP">Передано в КС</label>
+				</li>
+				<li>
+					<input type="checkbox" id="orders_done" name="orders_done" />
+					<label for="orders_done">Выполнено</label>
+				</li>
+				<li>
+					<input type="checkbox" id="orders_refunds" name="orders_refunds" />
+					<label for="orders_refunds">Возвраты</label>
+				</li>
+			</ul>
+		</div>
+
+		<div class="orders__container">
+			<h2>заказы</h2>
+
+			<div class="orders__list">
+				<div class="orders__item">
+
+					<div class="orders__item-info">
+
+						<div class="orders__item-status">
+							<div></div>
+							<span>В пути</span>
+							<img src="../../../assets/img/icons/chevron.svg" alt="status" />
+						</div>
+
+						<div class="orders__item-dateInfo">
+							<span>Заказ №: <span> 1223456</span></span>
+							<span>Дата заказа: <span>02.03.24 14:00</span></span>
+							<span>Дата выдачи: <span>02.03.24 16:15</span></span>
+						</div>
+
+					</div>
+
+					<div class="orders__item-pics">
+						<img src="../../../assets/img/photo/tovar.png" alt="product" />
+						<img src="../../../assets/img/photo/tovar.png" alt="product" />
+						<img src="../../../assets/img/photo/tovar.png" alt="product" />
+					</div>
+
+					<div class="orders__control">
+
+						<div class="orders__product-control">
+							<button>Детали заказа</button>
+							<button>Отменить заказ</button>
+						</div>
+
+						<div class="orders__logystic-control">
+							<button>
+								<img src="../../../assets/img/icons/truck.png" alt="truck" />
+								Связаться со службой доставки</button>
+							<button>
+								<img src="../../../assets/img/icons/map.png" alt="map" />
+								Отследить заказ
+							</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="notification__pagination">
+				<ul class="notification__pagination-pages">
+					<li class="notification__pagination-pages__active">1</li>
+					<li>2</li>
+					<li>3</li>
+					<li>...</li>
+					<li>79</li>
+				</ul>
+				<button class="notification__pagination-button">
+					Следующая
+					<img src="../../../../assets/img/icons/arrow.svg" alt="next" />
+				</button>
+				<div class="notification__pagination-divider"></div>
+				<div class="notification__pagination-select">
+					<span>Перейти на</span>
+					<input />
+					<button>»</button>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+</body>
+
+</html>
