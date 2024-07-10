@@ -1,0 +1,147 @@
+.addProduct__inner
+ padding: 40px
+ border: 1px solid $grayBg
+ border-radius: 5px
+ h2
+  font-size: 30px
+  text-transform: uppercase
+  color: $blackTitle	
+  font-family: 'oswald'	
+
+.addProduct_tab-container
+ margin-top: 40px	
+ display: flex
+ gap: 50px	
+ button
+  font-size: 26px
+  color: $purple
+  border: none	
+  border-bottom: 2px solid inherit
+  background-color: inherit
+  font-family: 'oswald'  		
+
+.addProduct_tab-container__active
+ color: $blackTitle	!important  
+ border-bottom: 2px solid $yellow !important 
+
+.addProduct__form
+ margin-top: 30px
+ display: flex
+ flex-direction: column
+ gap: 30px  		
+
+.addProduct__image-container
+ display: flex
+ flex-wrap: wrap 	
+ gap: 30px 
+ input
+  display: none
+ label
+  width: 129px
+  height: 129px		
+  display: flex
+  flex-direction: column
+  justify-content: center	
+  align-items: center	
+  border: 2px solid $grayBg
+  border-radius: 5px
+  img
+   height: 48px
+   width: 48px	 			
+
+.addProduct__img
+  padding: 10px
+  width: 129px
+  height: 129px			
+  border: 2px solid $grayBg
+  border-radius: 5px
+  position: relative
+  button
+   position: absolute
+   top: -15px
+   right: -15px	
+   border-radius: 500px
+   width: 30px
+   height: 30px  	 			
+   border: none	  
+   background-color: $grayBg	 
+
+.addProduct__input	
+ border: 1px solid $grayInputBorder
+ border-radius: 5px
+ height: 60px
+ width: 100%	
+ padding: 0 25px 
+
+.addProduct__form-row
+ display: flex 	
+ justify-content: space-between 
+ input
+  width: 30%	
+ input:first-child
+  width: 65%		 
+
+.addProduct__select	
+ border: 1px solid $grayInputBorder
+ padding: 0 25px 
+ border-radius: 5px
+ height: 60px  	
+ width: 339px
+ appearance: none
+ background: url('../../../assets/img/icons/chevronDown.svg') no-repeat right
+ background-position-x: calc(100% - 8px) 
+ @media(max-width: 1920px) 
+  width:394px	
+ @media(max-width: 1200px) 	
+  width:48%			
+ @media(max-width: 992px) 
+  width:60%	
+ @media(max-width: 767px) 
+  width:100%				
+
+.addProduct__form-category
+ display: flex
+ gap: 30px
+ flex-wrap: wrap 	
+ div	
+  display: flex
+  flex-direction: column		
+  gap: 10px
+  label
+   font-family: 'inter'		
+   color: $blackTitle	 				
+ textarea
+  resize: none
+  width: 100%	
+  border: 1px solid $grayInputBorder
+  padding: 25px 
+  border-radius: 5px	
+  height: 200px		 
+
+.addProduct__characteristic-container
+ display: flex
+ flex-direction: column
+ gap: 30px 
+ span 
+  font-size: 24px
+  font-family: 'oswald'		
+ div
+  display: flex
+  justify-content: space-between
+  input			
+   width: 32%		
+
+.addProduct__size-container
+ display: flex
+ justify-content: space-between
+ div
+  display: flex
+  flex-direction: column		
+  width: 100%	
+  gap: 10px	
+  label
+   font-family: 'inter'		
+   color: $blackTitle	 			 		 
+
+.addProduct__btn
+ height: 50px 		 

@@ -1,0 +1,182 @@
+.orderDetails__header 	
+ padding: 40px	
+ width: 160px	
+ display: flex
+ flex-direction: column
+ gap: 40px 
+ h2
+  font-size: 30px	 	
+  text-transform: uppercase
+  color: $blackTitle
+  font-family: 'oswald-bold'	
+ button
+  border: none
+  background-color: inherit
+  color: $purple	
+  display: flex
+  gap: 15px	
+  img
+   width: 22px	
+ @media(max-width: 1200px)	 
+  width: 100%	
+  flex-direction: row-reverse		
+  align-items: center	  
+  justify-content: space-between	
+  padding: 20px 
+ @media(max-width: 767px)	 
+  h2
+   display: none			
+
+.orderDetails__container
+ padding-top: 50px
+ padding-left: 30px	
+ padding-right: 30px		 	 
+ width: 100%
+ @media(max-width: 767px)
+  padding: 10px	
+
+
+.orderDetails__info
+ height: 40px	
+ width: 100%
+ display: flex
+ justify-content: space-between
+ @media(max-width: 767px)
+  flex-direction: column	
+  height: auto			 
+
+.orderDetails__datePicker
+ display: flex
+ align-items: center	 
+ div
+  border: 1px solid $grayInputBorder
+  border-radius: 5px
+  position: relative
+  height: 100%
+  width: 140px
+  margin-left: 20px
+  margin-right: 10px			
+  img
+   position: absolute
+   top: 7px
+   left: 15px
+  input 	 	   				
+   position: absolute		
+   top: 0
+   left: 0 
+   width: 100%
+   height: 100%	
+   padding-left: 45px	   
+   border: none
+   background-color: inherit	
+ @media(max-width: 767px)
+  height: auto
+  flex-wrap: wrap	
+  gap: 10px	
+  div
+   height: 40px
+   margin: 0	 			
+  button
+   height: 40px				 
+
+
+.orderDetails__details
+ margin-top: 30px	
+ background-color: $grayBg	
+ border-radius: 5px
+ display: flex
+ justify-content: space-between		
+ align-items: center 
+ height: 60px 
+ padding: 10px 10px 10px 30px 
+ span
+  span
+   font-family:'oswald-bold'	
+   font-size: 20px
+   color: $blackTitle	 				
+ ul
+  display: flex
+  gap: 10px	
+  height: 100%	 
+ @media(max-width: 767px)
+  flex-direction: column 
+  align-items: flex-start	
+  height: auto	
+  ul
+   flex-wrap: wrap			
+   margin-top: 10px		
+   li	  
+    height: 40px		
+	
+
+.orderDetails__list
+ margin-top: 30px 
+ display: flex
+ flex-wrap: wrap  
+ gap: 20px 		
+
+.orderDetails__card
+ width: 350px	
+ border: 1px solid $grayBorder
+ border-radius: 5px 	 
+ padding: 25px 20px
+ @media(max-width: 1920px)
+  padding: 20px 15px
+  width: 289px	 
+ @media(max-width: 1440px)
+  width: 329px	
+ @media(max-width: 1200px)
+  width: 319px   
+ @media(max-width: 767px)
+  width: 100%	
+
+.orderDetails__card-title 
+ font-family: 'inter-bold'
+ color: $blackTitle	
+ font-size: 16px
+
+.orderDetails__card-info
+ height: 120px
+ display: flex 
+ justify-content: space-between 
+ margin-top: 40px
+ img
+  width: 120px	
+ @media(max-width: 1920px)
+  img
+   height: 90px		
+   width: 90px
+ @media(max-width: 1440px)
+  img
+   height: 120px		
+   width: 120px			 		  		 
+ @media(max-width: 767px)
+  width: 100%	 
+ @media(max-width: 767px)
+  flex-direction: column
+  height: auto
+  gap: 10px		
+
+.orderDetails__description
+ display: flex
+ flex-direction: column
+ justify-content: space-between
+ div 	
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+  color: #888	
+  span  
+   width: fit-content
+   font-size: 14px	
+   white-space: nowrap
+  span:nth-child(2)	
+   width: 100%	
+   min-width: 20px	 		
+   border-bottom: 1px dashed $grayBorder	 		
+
+.orderDetails__card-price 
+ margin-top: 20px
+ span
+  color: $blackTitle 
+  font-size: 18px	

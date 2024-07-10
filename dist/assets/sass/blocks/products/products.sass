@@ -1,0 +1,98 @@
+.products__inner
+ border: 1px solid $grayBorder
+ border-radius: 5px
+ padding: 40px 
+
+.products__header
+ display: flex
+ justify-content: space-between	
+ align-items: center 
+ h2
+  font-size: 30px
+  color: $blackTitle
+  font-family: 'oswald-bold'				 
+  text-transform: uppercase
+ div
+  height: 40px	
+  display: flex	
+  gap: 10px
+  button	
+   font-family: 'oswald'
+   font-size: 14px	 		
+   text-transform: uppercase	
+ @media(max-width: 1200px) 
+  div
+   button
+    font-size: 12px			 
+ @media(max-width: 767px) 
+  flex-direction: column
+  gap: 20px	
+  h2
+   font-size: 22px
+  div
+   button
+    font-size: 10px					 				 	  
+
+.products__control
+ margin-top: 30px	
+ display: flex
+ justify-content: space-between 
+ @media(max-width: 992px) 
+  flex-direction: column
+  gap: 20px		 
+
+.products__control-container
+ position: relative	 	
+ border: 1px solid $grayBorder
+ border-radius: 5px
+ height: 40px
+ padding: 0 15px  
+
+.products__input 
+ background: url('../../../assets/img/icons/search.svg') no-repeat right
+ background-position-x: calc(100% - 8px)
+ width: 523px 	 	
+ @media(max-width: 1920px) 
+  width:440px	
+ @media(max-width: 1440px) 
+  width:35%
+ @media(max-width: 992px) 
+  width:60%	
+ @media(max-width: 767px) 
+  width:100%			
+ 					
+
+.products__select
+ width: 339px
+ appearance: none
+ background: url('../../../assets/img/icons/chevronDown.svg') no-repeat right
+ background-position-x: calc(100% - 8px) 
+ @media(max-width: 1920px) 
+  width:280px	 
+ @media(max-width: 1440px) 
+  width:30%	
+ @media(max-width: 992px) 
+  width:60%	
+ @media(max-width: 767px) 
+  width:100%							
+
+.product__select-sort	
+ width: 360px	
+ @media(max-width: 1920px) 
+  width:300px	  
+ @media(max-width: 1440px) 
+  width:30%		
+ @media(max-width: 992px) 
+  width:60%		
+ @media(max-width: 767px) 
+  width:100%	
+
+.products__footer
+ margin-top: 30px	
+ display: flex
+ gap: 10px 
+ @media(max-width: 767px) 
+  flex-direction: column
+  div
+   height: 40px			
+  		

@@ -2,11 +2,12 @@
  border: 1px solid $grayBorder
  border-radius: 5px
  display: flex 
+ padding-bottom: 20px 
  @media(max-width: 1200px) 
   flex-direction: column	
 
 .orders__filterList 
- height: 100%	
+ height: auto	
  padding: 40px
  background-color: $grayBg
  display: flex
@@ -99,7 +100,23 @@
   color: $blackTitle		
  @media(max-width: 1440px)
   font-size: 12px		
-  padding: 6px 12px 		
+  padding: 6px 12px 	
+
+.orders__item-status__done
+ color: $finishedGreen
+ background-color: $finishedGreenBg	
+ div
+  background-color: $finishedGreen 	
+ img
+  color: $finishedGreen			
+
+.orders__item-status__refund
+ color: $red	
+ background-color: $redBg	
+ div
+  background-color: $red 	
+ img
+  color: $red		
 
 .orders__item-dateInfo
  margin-top: 12px	
