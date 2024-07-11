@@ -3106,6 +3106,65 @@ input {
   height: 50px;
 }
 
+.autoImport__inner {
+  padding: 40px;
+  margin-top: 50px;
+  border: 1px solid #EFE9F1;
+  border-radius: 5px;
+}
+
+.autoImport_tab-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 50px;
+}
+
+.autoImport_tab-container button {
+  font-size: 26px;
+  color: #5A2957;
+  border: none;
+  border-bottom: 2px solid inherit;
+  background-color: inherit;
+  font-family: "oswald";
+}
+
+.autoImport__input-container {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 10px;
+}
+
+.autoImport__input-container label {
+  font-size: 16px;
+  color: #202020;
+  font-family: "inter-bold";
+}
+
+.autoImport__input-container input {
+  width: 100%;
+  height: 60px;
+  padding: 0 25px;
+  border: 1px solid #DFDAE1;
+  border-radius: 5px;
+}
+
+.autoImport__Btn-container {
+  margin-top: 40px;
+  height: 70px;
+}
+
+.autoImport__Btn-container button {
+  padding: 0 50px;
+  font-size: 20px;
+}
+
 @media (min-width: 767px) {
   .notification__header {
     -webkit-box-orient: horizontal;
@@ -3926,6 +3985,12 @@ input {
     display: none;
   }
 
+  .accountInfo__breadcrumb {
+    font-size: 12px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
   .accountInfo__title {
     font-size: 30px;
     margin-top: 20px;
@@ -4308,6 +4373,23 @@ input {
 
   .addProduct__size-container div {
     width: 100%;
+  }
+
+  .autoImport__inner {
+    padding: 20px;
+  }
+
+  .autoImport_tab-container button {
+    font-size: 16px;
+  }
+
+  .autoImport__Btn-container {
+    margin-top: 20px;
+  }
+
+  .autoImport__Btn-container button {
+    padding: 0 30px;
+    font-size: 14px;
   }
 }
 
