@@ -196,6 +196,7 @@
   img
    max-width: 313px
 
+
 .accountInfo__discount__additional
  font-size: 14px
  color: $purple 	
@@ -215,7 +216,6 @@
  span:first-child
   display: flex
   font-family: 'inter-bold'	
-  font-size: 13px
   text-transform: uppercase	
   align-items: center	
   gap: 8px		 
@@ -230,8 +230,22 @@
  @media (max-width: 1200px)  
   width: 688px
  @media (max-width: 768px)  
-  width: 100%		
+  width: 100%
+  font-size: 10px			
 	
+.accountInfo__history
+ color:$blackTitle
+ span
+  white-space: nowrap	
+ span:first-child
+  width:6px
+  height:6px
+  border-radius:100px
+  background-color: $blackTitle	
+ @media(max-width: 768px)
+  span	
+   display: none				
+
 
 .accountInfo__history__finished
  color:$finishedGreen
@@ -239,7 +253,11 @@
   width:6px
   height:6px
   border-radius:100px
-  background-color: $finishedGreen			
+  background-color: $finishedGreen		
+ @media(max-width: 768px)
+  span	
+   display: none		
+
 
 .accountInfo__history__canceled
  color: $red
@@ -247,7 +265,10 @@
   width:6px
   height:6px
   border-radius:100px
-  background-color: $red				
+  background-color: $red	
+ @media(max-width: 768px)
+  span	
+   display: none						
 
 .accountInfo__fine__content
  padding-top:20px
@@ -261,3 +282,7 @@
   width: 313px	  
  @media (max-width: 768px)  
   width: 100%				
+
+.accountInfo__history__content
+ @media (max-width: 992px)  
+  font-size: 12px			

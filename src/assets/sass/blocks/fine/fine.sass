@@ -8,14 +8,19 @@
   font-family: 'oswald-bold'	
   color: $blackTitle
  overflow: auto		 	 
+ @media(max-width: 767px)
+  padding: 10px 	 
 
 .fine__table	
+ margin-top: 30px	
  width: 100%	
+ border-collapse: collapse 
+ tr
+  border-bottom: 1px solid $grayBorder		
  th, td
   text-align: left
   padding: 8px 0
   height: 100%	
-  border-bottom: 1px solid $grayBorder		
  th:nth-child(1), td:nth-child(1)
   min-width: 80px
  th:nth-child(2), td:nth-child(2)

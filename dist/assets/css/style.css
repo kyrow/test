@@ -757,7 +757,6 @@ input {
   display: -ms-flexbox;
   display: flex;
   font-family: "inter-bold";
-  font-size: 13px;
   text-transform: uppercase;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -774,6 +773,21 @@ input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.accountInfo__history {
+  color: #202020;
+}
+
+.accountInfo__history span {
+  white-space: nowrap;
+}
+
+.accountInfo__history span:first-child {
+  width: 6px;
+  height: 6px;
+  border-radius: 100px;
+  background-color: #202020;
 }
 
 .accountInfo__history__finished {
@@ -823,13 +837,17 @@ input {
   min-width: 680px;
   width: 100%;
   border-bottom: 1px solid #EFE9F1;
+  border-collapse: collapse;
+}
+
+.sellers__table tr {
+  border-top: 1px solid #EFE9F1;
 }
 
 .sellers__table th,
 .sellers__table td {
   text-align: left;
   padding: 8px 0;
-  border-top: 1px solid #EFE9F1;
   font-size: 16px;
   text-overflow: ellipsis;
   overflow: hidden;
@@ -1170,16 +1188,21 @@ input {
 .requestList__table {
   margin-top: 40px;
   width: 100%;
+  border-collapse: collapse;
+  border-top: 1px solid #EFE9F1;
 }
 
 .requestList__table th,
 .requestList__table td {
   text-align: left;
   padding: 8px 4px;
-  border-top: 1px solid #EFE9F1;
   font-size: 16px;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+.requestList__table tr {
+  border-bottom: 1px solid #EFE9F1;
 }
 
 .requestList__table tr:first-child {
@@ -1553,6 +1576,10 @@ input {
   color: #989898;
 }
 
+.newReport__form button {
+  height: 60px;
+}
+
 .notifications__inner h2 {
   font-size: 30px;
   font-family: "oswald-bold";
@@ -1568,16 +1595,13 @@ input {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
 }
 
 .notification__header ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0;
   gap: 40px;
 }
 
@@ -1596,10 +1620,6 @@ input {
   color: #5A2957;
   border: none;
   border-bottom: 1px dashed #5A2957;
-}
-
-.notification__header ul {
-  margin-top: 10px;
 }
 
 .notification__header__selected {
@@ -1954,6 +1974,7 @@ input {
 .reviews__table {
   margin-top: 30px;
   width: 100%;
+  border-collapse: collapse;
 }
 
 .reviews__table th,
@@ -1961,6 +1982,9 @@ input {
   text-align: left;
   padding: 8px 0;
   height: 100%;
+}
+
+.reviews__table tr {
   border-bottom: 1px solid #EFE9F1;
 }
 
@@ -2000,7 +2024,13 @@ input {
 }
 
 .fine__table {
+  margin-top: 30px;
   width: 100%;
+  border-collapse: collapse;
+}
+
+.fine__table tr {
+  border-bottom: 1px solid #EFE9F1;
 }
 
 .fine__table th,
@@ -2008,7 +2038,6 @@ input {
   text-align: left;
   padding: 8px 0;
   height: 100%;
-  border-bottom: 1px solid #EFE9F1;
 }
 
 .fine__table th:nth-child(1),
@@ -3852,6 +3881,10 @@ input {
     width: 100%;
   }
 
+  .accountInfo__history__content {
+    font-size: 12px;
+  }
+
   .notification__pagination {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -3914,6 +3947,19 @@ input {
 
   .accountInfo__history__row {
     width: 100%;
+    font-size: 10px;
+  }
+
+  .accountInfo__history span {
+    display: none;
+  }
+
+  .accountInfo__history__finished span {
+    display: none;
+  }
+
+  .accountInfo__history__canceled span {
+    display: none;
   }
 
   .accountInfo__fine__content {
@@ -4112,6 +4158,17 @@ input {
     padding-top: 8px;
   }
 
+  .notification__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+
+  .notification__header ul {
+    margin-top: 10px;
+  }
+
   .transactionHistory__inner {
     padding: 10px;
     overflow: auto;
@@ -4147,6 +4204,10 @@ input {
 
   .reviews__content {
     padding-left: 0;
+  }
+
+  .fine__inner {
+    padding: 10px;
   }
 
   .fine__table th,
