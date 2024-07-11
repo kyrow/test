@@ -7,6 +7,10 @@
   text-transform: uppercase
   color: $blackTitle	
   font-family: 'oswald'	
+ @media(max-width: 767px)
+  padding: 20px	
+  h2
+   font-size: 22px		 		
 
 .addProduct_tab-container
  margin-top: 40px	
@@ -18,7 +22,11 @@
   border: none	
   border-bottom: 2px solid inherit
   background-color: inherit
-  font-family: 'oswald'  		
+  font-family: 'oswald'  	
+ @media(max-width: 767px)
+  button	
+   font-size: 16px			
+
 
 .addProduct_tab-container__active
  color: $blackTitle	!important  
@@ -28,7 +36,8 @@
  margin-top: 30px
  display: flex
  flex-direction: column
- gap: 30px  		
+ gap: 30px  	
+
 
 .addProduct__image-container
  display: flex
@@ -47,7 +56,16 @@
   border-radius: 5px
   img
    height: 48px
-   width: 48px	 			
+   width: 48px	
+ @media(max-width: 767px)
+  label  
+   width: 80px
+   height: 80px
+   font-size: 12px
+   text-align: center	 	  
+   img
+    width: 24px
+
 
 .addProduct__img
   padding: 10px
@@ -64,7 +82,10 @@
    width: 30px
    height: 30px  	 			
    border: none	  
-   background-color: $grayBg	 
+   background-color: $grayBg	
+  @media(max-width: 767px)
+   width: 80px
+   height: 80px	  
 
 .addProduct__input	
  border: 1px solid $grayInputBorder
@@ -72,6 +93,9 @@
  height: 60px
  width: 100%	
  padding: 0 25px 
+ @media(max-width: 767px)
+  padding: 0 15px 
+  height: 40px		
 
 .addProduct__form-row
  display: flex 	
@@ -79,31 +103,30 @@
  input
   width: 30%	
  input:first-child
-  width: 65%		 
+  width: 65%		
+  	 
 
 .addProduct__select	
  border: 1px solid $grayInputBorder
  padding: 0 25px 
  border-radius: 5px
  height: 60px  	
- width: 339px
+ width: 100%
  appearance: none
  background: url('../../../assets/img/icons/chevronDown.svg') no-repeat right
  background-position-x: calc(100% - 8px) 
- @media(max-width: 1920px) 
-  width:394px	
- @media(max-width: 1200px) 	
-  width:48%			
- @media(max-width: 992px) 
-  width:60%	
- @media(max-width: 767px) 
-  width:100%				
+ @media(max-width: 767px)
+  height: 40px	
+  padding: 0 10px 	
+		
 
 .addProduct__form-category
  display: flex
  gap: 30px
  flex-wrap: wrap 	
  div	
+  @media(max-width: 1920px) 
+  width: 394px		
   display: flex
   flex-direction: column		
   gap: 10px
@@ -141,7 +164,12 @@
   gap: 10px	
   label
    font-family: 'inter'		
-   color: $blackTitle	 			 		 
+   color: $blackTitle	
+ @media(max-width: 767px)  
+  flex-direction: column	
+  gap: 15px 
+  div
+   width: 100%	 						 		 
 
 .addProduct__btn
  height: 50px 		 
