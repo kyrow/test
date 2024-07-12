@@ -1,56 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-
-<body>
-	<div class="products__inner">
-		<div class="products__header">
-			<h2>неопубликованные товары</h2>
-			<div>
-				<button class="blankBtn">подать заявку на категорию</button>
-				<button class="btn">добавить товар</button>
-			</div>
-		</div>
-
-		<div class="products__control">
-			<select class="products__control-container products__select">
-				<option>Все категории</option>
-				<option>Все категории</option>
-				<option>Все категории</option>
-			</select>
-
-			<input class="products__control-container products__input" placeholder="Поиск" />
-
-			<select class="products__control-container products__select product__select-sort">
-				<option>Сортировать по дате (по возврастанию)</option>
-				<option>Сортировать по дате (по возврастанию)</option>
-				<option>Сортировать по дате (по возврастанию)</option>
-			</select>
-
-		</div>
-
-		<!-- @@include('./unpublished/unpublished.html') -->
-		<!-- @@include('./published/published.html') -->
-		@@include('./archive/archive.html')
-
-		<div class="products__footer">
-			<select class="products__control-container products__select">
-				<option>Выберите действие</option>
-				<option>Все категории</option>
-				<option>Все категории</option>
-			</select>
-
-			<div>
-				<button class="blankBtn">Применить</button>
-			</div>
-
+<div class="products__inner">
+	<div class="products__header">
+		<h2>неопубликованные товары</h2>
+		<div>
+			<button class="blankBtn">подать заявку на категорию</button>
+			<button class="btn">добавить товар</button>
 		</div>
 	</div>
-</body>
 
-</html>
+	<div class="products__control">
+		<select class="products__control-container products__select">
+			<option>Все категории</option>
+			<option>Все категории</option>
+			<option>Все категории</option>
+		</select>
+
+		<input class="products__control-container products__input" placeholder="Поиск" />
+
+		<select class="products__control-container products__select product__select-sort">
+			<option>Сортировать по дате (по возврастанию)</option>
+			<option>Сортировать по дате (по возврастанию)</option>
+			<option>Сортировать по дате (по возврастанию)</option>
+		</select>
+
+	</div>
+
+	<!-- @@include('./unpublished/unpublished.html') -->
+	<!-- @@include('./published/published.html') -->
+	@@include('./archive/archive.html')
+
+	<div class="products__footer">
+		<select class="products__control-container products__select">
+			<option>Выберите действие</option>
+			<option>Все категории</option>
+			<option>Все категории</option>
+		</select>
+
+		<div>
+			<button class="blankBtn">Применить</button>
+		</div>
+
+	</div>
+</div>

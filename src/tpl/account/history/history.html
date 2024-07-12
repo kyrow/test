@@ -1,66 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-
-<body>
-	<div class="transactionHistory__inner">
-		<div class="transactionHistory__container">
-			<div class="transactionHistory__title">
-				<h2>история вывода средств</h2>
-				<button>
-					<img src="../../../assets/img/icons/arrow.svg" alt="back" />
-					<span>Назад</span>
-				</button>
-			</div>
-			<table class="transactionHistory__table">
-				<tr class="transactionHistory__table-header">
-					<th>Дата запроса</th>
-					<th>Дата закрытия</th>
-					<th>Сумма</th>
-					<th>Платежные данные</th>
-					<th></th>
-				</tr>
-				<tr class="transactionHistory__row">
-					<td>04.04.24</td>
-					<td>07.04.24</td>
-					<td>160 780 ₸</td>
-					<td>БИН: 123456789064, ИИК: 648346805723, БИК: GFGUNVDL</td>
-					<td>
-						<button class="btn transactionHistory__btn">
-							<span>Назад</span>
-						</button>
-					</td>
-				</tr>
-
-			</table>
-		</div>
-
-		<div class="notification__pagination">
-			<ul class="notification__pagination-pages">
-				<li class="notification__pagination-pages__active">1</li>
-				<li>2</li>
-				<li>3</li>
-				<li>...</li>
-				<li>79</li>
-			</ul>
-			<button class="notification__pagination-button">
-				Следующая
-				<img src="../../../../assets/img/icons/arrow.svg" alt="next" />
+<div class="transactionHistory__inner">
+	<div class="transactionHistory__container">
+		<div class="transactionHistory__title">
+			<h2>история вывода средств</h2>
+			<button>
+				<img src="../../../assets/img/icons/arrow.svg" alt="back" />
+				<span>Назад</span>
 			</button>
-			<div class="notification__pagination-divider"></div>
-			<div class="notification__pagination-select">
-				<span>Перейти на</span>
-				<input />
-				<button>»</button>
-			</div>
 		</div>
+		<table class="transactionHistory__table">
+			<tr class="transactionHistory__table-header">
+				<th>Дата запроса</th>
+				<th>Дата закрытия</th>
+				<th>Сумма</th>
+				<th>Платежные данные</th>
+				<th></th>
+			</tr>
+			<tr class="transactionHistory__row">
+				<td>04.04.24</td>
+				<td>07.04.24</td>
+				<td>160 780 ₸</td>
+				<td>БИН: 123456789064, ИИК: 648346805723, БИК: GFGUNVDL</td>
+				<td>
+					<button class="btn transactionHistory__btn">
+						<span>Назад</span>
+					</button>
+				</td>
+			</tr>
 
+		</table>
 	</div>
-</body>
 
-</html>
+	<div class="notification__pagination">
+		<ul class="notification__pagination-pages">
+			<li class="notification__pagination-pages__active">1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>...</li>
+			<li>79</li>
+		</ul>
+		<button class="notification__pagination-button">
+			Следующая
+			<img src="../../../../assets/img/icons/arrow.svg" alt="next" />
+		</button>
+		<div class="notification__pagination-divider"></div>
+		<div class="notification__pagination-select">
+			<span>Перейти на</span>
+			<input />
+			<button>»</button>
+		</div>
+	</div>
+
+</div>

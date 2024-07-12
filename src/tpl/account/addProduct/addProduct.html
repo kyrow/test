@@ -1,97 +1,84 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="addProduct__inner">
+	<h2>добавить товар</h2>
+	<div class="addProduct_tab-container">
+		<button class="addProduct_tab-container__active">Ручная загрузка</button>
+		<button>Автоматическая загрузка</button>
+	</div>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
+	<form class="addProduct__form">
 
-<body>
-	<div class="addProduct__inner">
-		<h2>добавить товар</h2>
-		<div class="addProduct_tab-container">
-			<button class="addProduct_tab-container__active">Ручная загрузка</button>
-			<button>Автоматическая загрузка</button>
+		<div class="addProduct__image-container">
+			<div class="addProduct__img">
+				<button>
+					<img src="../../../assets/img/icons/x-mark.png" alt="delete" />
+				</button>
+				<img src="../../../assets/img/photo/tovar.png" alt="product" />
+			</div>
+			<label for="addProduct__input-file">
+				<img src="../../../assets/img/icons/photo.svg" alt="photo" />
+				<span>Добавить фото</span>
+			</label>
+			<input type="file" id="addProduct__input-file" />
 		</div>
 
-		<form class="addProduct__form">
+		<div class="addProduct__form-row">
+			<input class="addProduct__input" placeholder="Наименование товара" />
+			<input class="addProduct__input" placeholder="Артикул" />
+		</div>
 
-			<div class="addProduct__image-container">
-				<div class="addProduct__img">
-					<button>
-						<img src="../../../assets/img/icons/x-mark.png" alt="delete" />
-					</button>
-					<img src="../../../assets/img/photo/tovar.png" alt="product" />
-				</div>
-				<label for="addProduct__input-file">
-					<img src="../../../assets/img/icons/photo.svg" alt="photo" />
-					<span>Добавить фото</span>
-				</label>
-				<input type="file" id="addProduct__input-file" />
+		<div class="addProduct__form-category">
+			<div>
+				<label>Категория товара</label>
+				<select class="addProduct__select">
+					<option>Текстиль</option>
+					<option>не Текстиль</option>
+					<option>не Текстиль</option>
+				</select>
 			</div>
 
-			<div class="addProduct__form-row">
-				<input class="addProduct__input" placeholder="Наименование товара" />
-				<input class="addProduct__input" placeholder="Артикул" />
+			<div>
+				<label>Бренд</label>
+				<select class="addProduct__select">
+					<option>Comfort</option>
+					<option>не Текстиль</option>
+					<option>не Текстиль</option>
+				</select>
 			</div>
 
-			<div class="addProduct__form-category">
-				<div>
-					<label>Категория товара</label>
-					<select class="addProduct__select">
-						<option>Текстиль</option>
-						<option>не Текстиль</option>
-						<option>не Текстиль</option>
-					</select>
-				</div>
+			<textarea placeholder="Описание"></textarea>
+		</div>
 
-				<div>
-					<label>Бренд</label>
-					<select class="addProduct__select">
-						<option>Comfort</option>
-						<option>не Текстиль</option>
-						<option>не Текстиль</option>
-					</select>
-				</div>
-
-				<textarea placeholder="Описание"></textarea>
+		<div class="addProduct__characteristic-container">
+			<span>Характеристики</span>
+			<div>
+				<input class="addProduct__input" placeholder="Материал" />
+				<input class="addProduct__input" placeholder="Цвет" />
+				<input class="addProduct__input" placeholder="Вес" />
 			</div>
+		</div>
 
-			<div class="addProduct__characteristic-container">
-				<span>Характеристики</span>
-				<div>
-					<input class="addProduct__input" placeholder="Материал" />
-					<input class="addProduct__input" placeholder="Цвет" />
-					<input class="addProduct__input" placeholder="Вес" />
-				</div>
+		<div class="addProduct__size-container">
+			<div>
+				<label>Размер</label>
+				<select class="addProduct__select">
+					<option>Comfort</option>
+					<option>не Текстиль</option>
+					<option>не Текстиль</option>
+				</select>
 			</div>
-
-			<div class="addProduct__size-container">
-				<div>
-					<label>Размер</label>
-					<select class="addProduct__select">
-						<option>Comfort</option>
-						<option>не Текстиль</option>
-						<option>не Текстиль</option>
-					</select>
-				</div>
-				<div>
-					<label>Производство</label>
-					<select class="addProduct__select">
-						<option>Comfort</option>
-						<option>не Текстиль</option>
-						<option>не Текстиль</option>
-					</select>
-				</div>
+			<div>
+				<label>Производство</label>
+				<select class="addProduct__select">
+					<option>Comfort</option>
+					<option>не Текстиль</option>
+					<option>не Текстиль</option>
+				</select>
 			</div>
+		</div>
 
-			<div class="addProduct__btn">
-				<button class="btn">Добавить</button>
-			</div>
+		<div class="addProduct__btn">
+			<button class="btn">Добавить</button>
+		</div>
 
-		</form>
-	</div>
-</body>
-
-</html>
+	</form>
+</div>

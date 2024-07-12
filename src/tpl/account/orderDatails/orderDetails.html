@@ -1,166 +1,153 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="orders_inner">
+	<div class="orderDetails__header">
+		<h2>детали
+			заказа</h2>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
+		<span>Заказ №<span>1223456</span></span>
 
-<body>
-	<div class="orders_inner">
-		<div class="orderDetails__header">
-			<h2>детали
-				заказа</h2>
+		<button>
+			<img src="../../../assets/img/icons/arrow.svg" alt="back" />
+			<span>Назад</span>
+		</button>
+	</div>
 
-			<span>Заказ №<span>1223456</span></span>
+	<div class="orderDetails__container">
 
-			<button>
-				<img src="../../../assets/img/icons/arrow.svg" alt="back" />
-				<span>Назад</span>
-			</button>
+		<div class="orderDetails__info">
+			<div class="orders__item-status orders__item-status__refund">
+				<div></div>
+				<span>Возврат</span>
+				<img src="../../../assets/img/icons/chevron.svg" alt="status" />
+			</div>
+
+			<div class="orderDetails__datePicker">
+				<span>Дата отправки</span>
+				<div>
+					<img src="../../../assets/img/icons/calendar.svg" alt="calendar" />
+					<input value="05.06.24" />
+				</div>
+				<button class="blankBtn">СОХРАНИТЬ</button>
+			</div>
 		</div>
 
-		<div class="orderDetails__container">
+		<div class="orderDetails__details">
+			<span>
+				Общая сумма заказа:
+				<span>1 456 345 ₸</span>
+			</span>
 
-			<div class="orderDetails__info">
-				<div class="orders__item-status orders__item-status__refund">
-					<div></div>
-					<span>Возврат</span>
-					<img src="../../../assets/img/icons/chevron.svg" alt="status" />
-				</div>
+			<ul>
+				<li>
+					<button class="blankBtn">Связаться со службой доставки</button>
+				</li>
+				<li>
+					<button class="blankBtn">Отследить заказ</button>
+				</li>
+				<li>
+					<button class="blankBtn blankBtn__error">Отменить заказ</button>
+				</li>
+			</ul>
+		</div>
 
-				<div class="orderDetails__datePicker">
-					<span>Дата отправки</span>
-					<div>
-						<img src="../../../assets/img/icons/calendar.svg" alt="calendar" />
-						<input value="05.06.24" />
+		<div class="orderDetails__list">
+			<div class="orderDetails__card">
+				<span class="orderDetails__card-title">Халат Вафельный Китай Размер S</span>
+				<div class="orderDetails__card-info">
+					<img src="../../../assets/img/photo/tovar.png" alt="product" />
+					<div class="orderDetails__description">
+						<div>
+							<span>Артикул</span>
+							<span></span>
+							<span>1651651615</span>
+						</div>
+						<div>
+							<span>Цвет</span>
+							<span></span>
+							<span>Белый</span>
+						</div>
+						<div>
+							<span>Кол-во</span>
+							<span></span>
+							<span>100 шт</span>
+						</div>
+						<div>
+							<span>Вес</span>
+							<span></span>
+							<span>85 кг</span>
+						</div>
 					</div>
-					<button class="blankBtn">СОХРАНИТЬ</button>
 				</div>
-			</div>
-
-			<div class="orderDetails__details">
-				<span>
-					Общая сумма заказа:
-					<span>1 456 345 ₸</span>
+				<span class="orderDetails__card-price">
+					Сумма:
+					<span>36 680 ₸</span>
 				</span>
-
-				<ul>
-					<li>
-						<button class="blankBtn">Связаться со службой доставки</button>
-					</li>
-					<li>
-						<button class="blankBtn">Отследить заказ</button>
-					</li>
-					<li>
-						<button class="blankBtn blankBtn__error">Отменить заказ</button>
-					</li>
-				</ul>
 			</div>
 
-			<div class="orderDetails__list">
-				<div class="orderDetails__card">
-					<span class="orderDetails__card-title">Халат Вафельный Китай Размер S</span>
-					<div class="orderDetails__card-info">
-						<img src="../../../assets/img/photo/tovar.png" alt="product" />
-						<div class="orderDetails__description">
-							<div>
-								<span>Артикул</span>
-								<span></span>
-								<span>1651651615</span>
-							</div>
-							<div>
-								<span>Цвет</span>
-								<span></span>
-								<span>Белый</span>
-							</div>
-							<div>
-								<span>Кол-во</span>
-								<span></span>
-								<span>100 шт</span>
-							</div>
-							<div>
-								<span>Вес</span>
-								<span></span>
-								<span>85 кг</span>
-							</div>
+			<div class="orderDetails__card">
+				<span class="orderDetails__card-title">Халат Вафельный Китай Размер S</span>
+				<div class="orderDetails__card-info">
+					<img src="../../../assets/img/photo/tovar.png" alt="product" />
+					<div class="orderDetails__description">
+						<div>
+							<span>Артикул</span>
+							<span></span>
+							<span>1651651615</span>
+						</div>
+						<div>
+							<span>Цвет</span>
+							<span></span>
+							<span>Белый</span>
+						</div>
+						<div>
+							<span>Кол-во</span>
+							<span></span>
+							<span>100 шт</span>
+						</div>
+						<div>
+							<span>Вес</span>
+							<span></span>
+							<span>85 кг</span>
 						</div>
 					</div>
-					<span class="orderDetails__card-price">
-						Сумма:
-						<span>36 680 ₸</span>
-					</span>
 				</div>
+				<span class="orderDetails__card-price">
+					Сумма:
+					<span>36 680 ₸</span>
+				</span>
+			</div>
 
-				<div class="orderDetails__card">
-					<span class="orderDetails__card-title">Халат Вафельный Китай Размер S</span>
-					<div class="orderDetails__card-info">
-						<img src="../../../assets/img/photo/tovar.png" alt="product" />
-						<div class="orderDetails__description">
-							<div>
-								<span>Артикул</span>
-								<span></span>
-								<span>1651651615</span>
-							</div>
-							<div>
-								<span>Цвет</span>
-								<span></span>
-								<span>Белый</span>
-							</div>
-							<div>
-								<span>Кол-во</span>
-								<span></span>
-								<span>100 шт</span>
-							</div>
-							<div>
-								<span>Вес</span>
-								<span></span>
-								<span>85 кг</span>
-							</div>
+			<div class="orderDetails__card">
+				<span class="orderDetails__card-title">Халат Вафельный Китай Размер S</span>
+				<div class="orderDetails__card-info">
+					<img src="../../../assets/img/photo/tovar.png" alt="product" />
+					<div class="orderDetails__description">
+						<div>
+							<span>Артикул</span>
+							<span></span>
+							<span>1651651615</span>
+						</div>
+						<div>
+							<span>Цвет</span>
+							<span></span>
+							<span>Белый</span>
+						</div>
+						<div>
+							<span>Кол-во</span>
+							<span></span>
+							<span>100 шт</span>
+						</div>
+						<div>
+							<span>Вес</span>
+							<span></span>
+							<span>85 кг</span>
 						</div>
 					</div>
-					<span class="orderDetails__card-price">
-						Сумма:
-						<span>36 680 ₸</span>
-					</span>
 				</div>
-
-				<div class="orderDetails__card">
-					<span class="orderDetails__card-title">Халат Вафельный Китай Размер S</span>
-					<div class="orderDetails__card-info">
-						<img src="../../../assets/img/photo/tovar.png" alt="product" />
-						<div class="orderDetails__description">
-							<div>
-								<span>Артикул</span>
-								<span></span>
-								<span>1651651615</span>
-							</div>
-							<div>
-								<span>Цвет</span>
-								<span></span>
-								<span>Белый</span>
-							</div>
-							<div>
-								<span>Кол-во</span>
-								<span></span>
-								<span>100 шт</span>
-							</div>
-							<div>
-								<span>Вес</span>
-								<span></span>
-								<span>85 кг</span>
-							</div>
-						</div>
-					</div>
-					<span class="orderDetails__card-price">
-						Сумма:
-						<span>36 680 ₸</span>
-					</span>
-				</div>
+				<span class="orderDetails__card-price">
+					Сумма:
+					<span>36 680 ₸</span>
+				</span>
 			</div>
 		</div>
 	</div>
-</body>
-
-</html>
+</div>
