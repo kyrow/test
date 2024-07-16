@@ -2,14 +2,17 @@
  border: 1px solid $grayBorder
  border-radius: 5px
  display: flex
-
+ margin-top: 50px
+ @media(max-width: 787px)
+  margin-top: 20px
 
 .report__navigation
  width: 120px	
  background-color: $grayBg
  padding-top: 30px
  @media(max-width: 1200px)
-  width: 50px	
+  width: 50px
+	
 
 .report__navigationItem
  width: 100%
@@ -30,7 +33,7 @@
   img
    width: 24px 	
    height: 24px
-  span		
+  span:last-child		
    display: none
 	 
 .report__navigationItem__active
@@ -58,6 +61,11 @@
   height: 12px
   top: 25px
   right: 5px
+ @media(max-width: 787px)
+  width: 12px
+  height: 12px
+  top: 20px
+  right: 0	
 
 .report__content
  width: 100%	

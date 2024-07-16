@@ -55,6 +55,11 @@
    height: 40px			
  &:last-child
   border-bottom: none 
+ @media(max-width: 425px)
+  img
+   width: 25px
+   height: 25px	
+
 
 
 .commentContainer__info
@@ -63,8 +68,9 @@
  gap: 10px  	
  padding-left: 30px		
  a
+  width: fit-content	
   color: $purple
-  border-bottom: 1px dashed $secondaryPurple
+  border-bottom: 1px dashed $secondaryPurple	
  @media(max-width: 767px) 	
   padding-left: 15px	
   a
@@ -74,6 +80,10 @@
    font-size: 12px
   img
    width: 16px 			
+ @media(max-width: 425px)
+  a
+   width: 150px
+   text-overflow: ellipsis	 
 
 .commentContainer__info__user
  color: $secondaryText
@@ -138,11 +148,14 @@
  @media(max-width: 767px)	
   padding-left: 15px	 
   div 
+   height: auto		
    align-items: flex-start
    flex-direction: column-reverse
    gap: 15px
    img
-    display: none			  
+    display: none			
+   button
+    height: 40px				  
 	  			  	  			
 .commentContainer__title											
  font-size: 30px

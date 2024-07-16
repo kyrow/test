@@ -1,6 +1,6 @@
 .orderDetails__header 	
  padding: 40px	
- width: 160px	
+ width: 274px	
  display: flex
  flex-direction: column
  gap: 40px 
@@ -9,6 +9,15 @@
   text-transform: uppercase
   color: $blackTitle
   font-family: 'oswald-bold'	
+ span
+  display: flex
+  flex-direction: column
+  color: $secondaryText
+  font-size: 16px
+  span:last-child
+    font-size: 20px
+    color: $blackTitle
+    font-family: 'oswald'				   		 	 	 		 				
  button
   border: none
   background-color: inherit
@@ -29,7 +38,6 @@
 
 .orderDetails__container
  padding-top: 50px
- padding-left: 30px	
  padding-right: 30px		 	 
  width: 100%
  @media(max-width: 767px)
@@ -120,9 +128,6 @@
  border: 1px solid $grayBorder
  border-radius: 5px 	 
  padding: 25px 20px
- @media(max-width: 1920px)
-  padding: 20px 15px
-  width: 289px	 
  @media(max-width: 1440px)
   width: 329px	
  @media(max-width: 1200px)
@@ -140,12 +145,10 @@
  display: flex 
  justify-content: space-between 
  margin-top: 40px
+ margin-bottom: 20px
  img
-  width: 120px	
- @media(max-width: 1920px)
-  img
-   height: 90px		
-   width: 90px
+  height: 100%	
+  width: 120px		
  @media(max-width: 1440px)
   img
    height: 120px		
@@ -176,7 +179,7 @@
    border-bottom: 1px dashed $grayBorder	 		
 
 .orderDetails__card-price 
- margin-top: 20px
  span
   color: $blackTitle 
   font-size: 18px	
+  font-family: 'oswald'	

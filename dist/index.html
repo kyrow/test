@@ -134,112 +134,195 @@
 		</div>
 		<h1 class="accountInfo__title">личный кабинет</h1>
 
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		<div class="products__inner">
-	<div class="products__header">
-		<h2>неопубликованные товары</h2>
-		<div>
-			<button class="blankBtn">подать заявку на категорию</button>
-			<button class="btn">добавить товар</button>
-		</div>
-	</div>
+		<div class="accountInfo__sections">
 
-	<div class="products__control">
-		<select class="products__control-container products__select">
-			<option>Все категории</option>
-			<option>Все категории</option>
-			<option>Все категории</option>
-		</select>
+	<div class="accountInfo__section__wrapper">
 
-		<input class="products__control-container products__input" placeholder="Поиск" />
-
-		<select class="products__control-container products__select product__select-sort">
-			<option>Сортировать по дате (по возврастанию)</option>
-			<option>Сортировать по дате (по возврастанию)</option>
-			<option>Сортировать по дате (по возврастанию)</option>
-		</select>
-
-	</div>
-
-	
-	
-	<!DOCTYPE html>
-<html lang="en">
-
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
-</head>
-
-<body>
-	<div class="unpublishedProducts__table-container">
-		<table>
-			<tr>
-				<th><input type="checkbox" /></th>
-				<th>Дата добавления</th>
-				<th>Фото</th>
-				<th>Наименование</th>
-				<th>Артикул</th>
-				<th>Кол-во</th>
-				<th>Цвет</th>
-				<th>Вес</th>
-				<th>Статус</th>
-				<th></th>
-			</tr>
-			<tr>
-				<td><input type="checkbox" /></td>
-				<td>01.04.24</td>
-				<td>
-					<img src="../../../../assets/img/photo/tovar.png" alt="products" />
-				</td>
-				<td>Халат Вафельный Китай Размер S</td>
-				<td>1651651615</td>
-				<td>
-					<input />
-				</td>
-				<td>Белый</td>
-				<td>1 кг</td>
-				<td>Не показывать в каталоге</td>
-				<td>
-					<div class="published__control">
-						<button>
-							<img src="../../../../assets/img/icons/published.png" alt="publish" />
-							Опубликовать</button>
-						<button>
-							<img src="../../../../assets/img/icons/x-mark.png" alt="delete" />
-							Удалить</button>
+		<div class="accountInfo__section__container accountInfo__section-container__active ">
+			<h2>контактные данные</h2>
+			<div class="accountInfo__divider"></div>
+			<div class="accountInfo__section__description">
+				<span>
+					Название продавца
+				</span>
+				<div>
+					Сумма комиссии:
+					<div class="badge">10%</div>
+				</div>
+			</div>
+			<div class="accountInfo__divider"></div>
+			<div class="accountInfo__contacts__content">
+				<img src="../../assets/img/photo/userDefault.png" alt="user without photo" />
+				<div class="accountInfo__contacts__info">
+					<div>
+						<span>Компания</span>
+						<p>Название компании</p>
 					</div>
-				</td>
-			</tr>
-		</table>
-	</div>
-</body>
+					<div>
+						<span>Телефон</span>
+						<p>+ 0 000 000 00 00</p>
+					</div>
+					<div>
+						<span>E-mail</span>
+						<p>info@mail.com</p>
+					</div>
+					<div>
+						<span>Адреса складов</span>
+						<ul>
+							<li>г. Алматы, ул. Кабдолова, 16</li>
+							<li>г. Алматы, ул. Жамбыла, 258</li>
+							<li>г. Актобе, ул. Гиззата Ибатова, 575</li>
+						</ul>
+					</div>
+					<div>
+						<span></span>
+						<a href="#">Посмотреть все склады</a>
+					</div>
 
-</html>
+				</div>
+			</div>
+			<div class="accountInfo__divider"></div>
+			<div class="accountInfo__contacts__additional">
+				<a href="#">
+					<img src="@/lock.png" />
+					Сменить пароль</a>
+				<a href="#">
+					<img src="@/pen.png" />
+					Редактировать личные данные</a>
+			</div>
+		</div>
 
-	<div class="products__footer">
-		<select class="products__control-container products__select">
-			<option>Выберите действие</option>
-			<option>Все категории</option>
-			<option>Все категории</option>
-		</select>
+		<div class="accountInfo__section__container">
 
-		<div>
-			<button class="blankBtn">Применить</button>
+			<div class="accountInfo__section__description">
+				<span>
+					Мои акции
+				</span>
+			</div>
+
+
+			<div class="accountInfo__divider"></div>
+
+			<div class="accountInfo__discount__content">
+				<img src="../../assets/img/photo/discount-1.png" alt="discount-1" />
+				<img src="../../assets/img/photo/discount-2.png" alt="discount-2" />
+			</div>
+
+			<div class="accountInfo__divider"></div>
+
+			<a href="#" class="accountInfo__discount__additional">Посмотреть все акции</a>
+
+		</div>
+
+		<div class="accountInfo__section__container">
+
+			<div class="accountInfo__section__description">
+				<span>
+					История заказов
+				</span>
+				<div>
+					Общая сумма заказов:
+					<div class="badge">10 535 146 ₸</div>
+				</div>
+			</div>
+
+			<div class="accountInfo__divider"></div>
+
+			<div class="accountInfo__history__content">
+				<div class="accountInfo__history__header">
+					<span>Статус</span>
+					<span>№ заказа</span>
+					<span>Наименование</span>
+					<span>Сумма заказа</span>
+				</div>
+
+				<div class="accountInfo__divider"></div>
+
+				<div class="accountInfo__history__row">
+					<span class="accountInfo__history__finished">
+						<span></span>
+						<span>выполнен</span>
+					</span>
+					<span>01506260</span>
+					<span>Халаты</span>
+					<span>
+						12 344 ₸
+						<a>
+							Подробнее »
+						</a>
+					</span>
+				</div>
+
+				<div class="accountInfo__divider"></div>
+
+				<div class="accountInfo__history__row">
+					<span class="accountInfo__history">
+						<span></span>
+						<span>В сборке</span>
+					</span>
+					<span>01506260</span>
+					<span>Халаты</span>
+					<span>
+						12 344 ₸
+						<a>Подробнее »</a>
+					</span>
+				</div>
+
+				<div class="accountInfo__divider"></div>
+
+				<div class="accountInfo__history__row">
+					<span class="accountInfo__history__canceled">
+						<span></span>
+						<span>отменен</span>
+					</span>
+					<span>01506260</span>
+					<span>Халаты</span>
+					<span>
+						12 344 ₸
+						<a>Подробнее »</a>
+					</span>
+				</div>
+
+				<div class="accountInfo__divider"></div>
+
+			</div>
+
+
+
+			<a href="#" class="accountInfo__discount__additional">Посмотреть все заказы</a>
+
+		</div>
+
+		<div class="accountInfo__section__container">
+
+			<div class="accountInfo__section__description">
+				<span>
+					Мои штрафы
+				</span>
+			</div>
+
+
+			<div class="accountInfo__divider"></div>
+
+			<div class="accountInfo__fine__content">Штрафов нет</div>
+
+			<div class="accountInfo__divider"></div>
+
+			<a href="#" class="accountInfo__discount__additional">Посмотреть все штрафы</a>
+
 		</div>
 
 	</div>
-</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 
 	</div>

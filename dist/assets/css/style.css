@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* Deafult style */
 
 html {
@@ -218,10 +220,10 @@ input {
 /* Container */
 
 .container {
-  max-width: 1362px;
+  max-width: 1424px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 30px;
   position: relative;
 }
 
@@ -463,11 +465,11 @@ input {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 100%;
-  padding-right: 50px;
+  padding-right: 20px;
 }
 
 .sider__list {
-  margin-top: 100px;
+  margin-top: 80px;
   color: #121212;
   font-weight: 400;
   font-size: 14px;
@@ -542,7 +544,7 @@ input {
 }
 
 .accountInfo__section__wrapper {
-  width: 1360px;
+  width: 1364px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -551,11 +553,14 @@ input {
       flex-wrap: wrap;
 }
 
+.accountInfo__section-container__active {
+  background-color: #F7F4F9;
+}
+
 .accountInfo__section__container {
   padding: 40px 40px 20px 40px;
   border-radius: 5px;
   border: 1px solid #EFE9F1;
-  background-color: #F7F4F9;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -563,6 +568,9 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .accountInfo__section__container h2 {
@@ -655,7 +663,7 @@ input {
 }
 
 .accountInfo__contacts__info div span {
-  min-width: 80px;
+  width: 80px;
   font-size: 16px;
   color: #989898;
 }
@@ -668,6 +676,7 @@ input {
 .accountInfo__contacts__info a {
   text-align: center;
   color: #5A2957;
+  border-bottom: 1px dashed #5A2957;
 }
 
 .badge {
@@ -723,12 +732,41 @@ input {
 
 .accountInfo__discount__content img {
   max-width: 468px;
+  object-fir: cover;
 }
 
 .accountInfo__discount__additional {
   font-size: 14px;
   color: #5A2957;
   margin-top: 20px;
+}
+
+.accountInfo__history__header {
+  width: 698px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.accountInfo__history__header span {
+  margin: 17px 0;
+  display: block;
+  width: 20%;
+  color: #989898;
+}
+
+.accountInfo__history__header span:nth-child(3),
+.accountInfo__history__header span:nth-child(4) {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .accountInfo__history__row {
@@ -932,17 +970,20 @@ input {
   margin-top: 35px;
   min-width: 680px;
   width: 100%;
-  border-bottom: 1px solid #EFE9F1;
 }
 
 .paymentData__table th,
 .paymentData__table td {
   text-align: left;
   padding: 8px 0;
-  border-top: 1px solid #EFE9F1;
+  border-bottom: 1px solid #EFE9F1;
   font-size: 16px;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+.paymentData__table th {
+  color: #989898;
 }
 
 .paymentData__table th:nth-child(1),
@@ -1053,6 +1094,7 @@ input {
   height: 60px;
   border: 1px solid #DFDAE1;
   padding-left: 25px;
+  font-size: 16px;
 }
 
 .paymentData__form button {
@@ -1100,6 +1142,7 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 50px;
 }
 
 .report__navigation {
@@ -1308,6 +1351,20 @@ input {
   background-color: inherit;
 }
 
+.requestList__row-selected {
+  position: relative;
+}
+
+.requestList__row-selected div:first-child {
+  width: 6px;
+  height: 6px;
+  border-radius: 100px;
+  background-color: #F2CC6A;
+  position: absolute;
+  top: 25px;
+  left: -15px;
+}
+
 .comment__title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1401,6 +1458,9 @@ input {
 }
 
 .commentContainer__info a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   color: #5A2957;
   border-bottom: 1px dashed #713D6E;
 }
@@ -1577,7 +1637,7 @@ input {
 }
 
 .newReport__form button {
-  height: 60px;
+  height: 50px;
 }
 
 .notifications__inner h2 {
@@ -1624,7 +1684,7 @@ input {
 
 .notification__header__selected {
   border-bottom: 2px solid #F2CC6A;
-  color: #202020;
+  color: #202020 !important;
 }
 
 .notification__container {
@@ -2010,6 +2070,7 @@ input {
 }
 
 .fine__inner {
+  margin-top: 50px;
   padding: 40px;
   border: 1px solid #EFE9F1;
   border-radius: 5px;
@@ -2040,6 +2101,10 @@ input {
   height: 100%;
 }
 
+.fine__table td button {
+  height: 40px;
+}
+
 .fine__table th:nth-child(1),
 .fine__table td:nth-child(1) {
   min-width: 80px;
@@ -2065,6 +2130,12 @@ input {
   min-width: 80px;
 }
 
+.fine__table-header {
+  color: #989898;
+  font-family: "inter";
+  font-size: 14px;
+}
+
 .orders_inner {
   border: 1px solid #EFE9F1;
   border-radius: 5px;
@@ -2072,6 +2143,7 @@ input {
   display: -ms-flexbox;
   display: flex;
   padding-bottom: 20px;
+  margin-top: 50px;
 }
 
 .orders__filterList {
@@ -2115,16 +2187,59 @@ input {
   gap: 15px;
 }
 
-.orders__filterList ul li input {
-  border: 1px solid #EFE9F1;
-  border-radius: 5px;
+.orders__filterList ul li input[type=checkbox] {
   width: 22px;
   height: 22px;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
 }
 
 .orders__filterList ul li label {
+  width: 100px;
+  height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 14px;
   color: #202020;
+  position: relative;
+  cursor: pointer;
+  padding-left: 40px;
+}
+
+.orders__filterList ul li label:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  border: 1px solid #EFE9F1;
+  border-radius: 5px;
+  background-color: white;
+}
+
+.orders__filterList ul li input[type=checkbox]:checked + label:before {
+  content: "✓";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  color: #202020;
+  background-color: #fff;
 }
 
 .orders__container {
@@ -2176,9 +2291,16 @@ input {
   width: fit-content;
   padding: 8px 17px;
   background: rgba(133, 133, 133, 0.1);
+}
+
+.orders__item-status select {
+  border: none;
+  background-color: inherit;
+  font-size: 13px;
   text-transform: uppercase;
   font-family: "inter-bold";
   color: #202020;
+  background: rgba(133, 133, 133, 0.01);
 }
 
 .orders__item-status div {
@@ -2205,6 +2327,11 @@ input {
   color: #41ad6c;
 }
 
+.orders__item-status__done select {
+  color: #41ad6c;
+  background-color: rgba(65, 173, 108, 0.01);
+}
+
 .orders__item-status__refund {
   color: #CE2222;
   background-color: rgba(206, 34, 34, 0.1);
@@ -2216,6 +2343,11 @@ input {
 
 .orders__item-status__refund img {
   color: #CE2222;
+}
+
+.orders__item-status__refund select {
+  color: #CE2222;
+  background-color: rgba(206, 34, 34, 0.01);
 }
 
 .orders__item-dateInfo {
@@ -2298,6 +2430,7 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: left;
 }
 
 .orders__logystic-control button img {
@@ -2307,7 +2440,7 @@ input {
 
 .orderDetails__header {
   padding: 40px;
-  width: 160px;
+  width: 274px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2323,6 +2456,24 @@ input {
   text-transform: uppercase;
   color: #202020;
   font-family: "oswald-bold";
+}
+
+.orderDetails__header span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #989898;
+  font-size: 16px;
+}
+
+.orderDetails__header span span:last-child {
+  font-size: 20px;
+  color: #202020;
+  font-family: "oswald";
 }
 
 .orderDetails__header button {
@@ -2341,7 +2492,6 @@ input {
 
 .orderDetails__container {
   padding-top: 50px;
-  padding-left: 30px;
   padding-right: 30px;
   width: 100%;
 }
@@ -2456,9 +2606,11 @@ input {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .orderDetails__card-info img {
+  height: 100%;
   width: 120px;
 }
 
@@ -2502,13 +2654,10 @@ input {
   border-bottom: 1px dashed #EFE9F1;
 }
 
-.orderDetails__card-price {
-  margin-top: 20px;
-}
-
 .orderDetails__card-price span {
   color: #202020;
   font-size: 18px;
+  font-family: "oswald";
 }
 
 .statystic__inner {
@@ -2517,6 +2666,7 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 50px;
 }
 
 .statystic__container {
@@ -2663,7 +2813,7 @@ input {
       -ms-flex-direction: row;
           flex-direction: row;
   height: 184px;
-  width: 456px;
+  width: 472px;
 }
 
 .statystic__productCard-description {
@@ -2716,6 +2866,7 @@ input {
   border: 1px solid #EFE9F1;
   border-radius: 5px;
   padding: 40px;
+  margin-top: 50px;
 }
 
 .products__header {
@@ -2773,6 +2924,7 @@ input {
   background: url("../../../assets/img/icons/search.svg") no-repeat right;
   background-position-x: calc(100% - 8px);
   width: 523px;
+  font-size: 16px;
 }
 
 .products__select {
@@ -2782,6 +2934,7 @@ input {
           appearance: none;
   background: url("../../../assets/img/icons/chevronDown.svg") no-repeat right;
   background-position-x: calc(100% - 8px);
+  font-size: 16px;
 }
 
 .product__select-sort {
@@ -2858,6 +3011,7 @@ input {
 
 .unpublishedProducts__table-container table tr th:last-child button,
 .unpublishedProducts__table-container table tr td:last-child button {
+  height: 50px;
   padding: 0 20px;
   text-align: left;
   width: 167px;
@@ -2873,9 +3027,13 @@ input {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .published__control button {
+  height: 20px !important;
   border: none;
   background-color: inherit;
   font-family: "inter";
@@ -2899,6 +3057,7 @@ input {
 }
 
 .addProduct__inner {
+  margin-top: 50px;
   padding: 40px;
   border: 1px solid #F7F4F9;
   border-radius: 5px;
@@ -3009,6 +3168,7 @@ input {
   height: 60px;
   width: 100%;
   padding: 0 25px;
+  font-size: 16px;
 }
 
 .addProduct__form-row {
@@ -3034,6 +3194,7 @@ input {
   border-radius: 5px;
   height: 60px;
   width: 100%;
+  font-size: 16px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -3194,31 +3355,9 @@ input {
   font-size: 20px;
 }
 
-@media (min-width: 767px) {
-  .notification__header {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
 @media (max-width: 1920px) {
-  .wrapper {
-    padding-left: 200px;
-  }
-
-  .sider {
-    padding-right: 30px;
-    left: -85%;
-  }
-
-  .accountInfo__section__wrapper {
-    width: 1100px;
-  }
-
   .accountInfo__contacts__info div {
-    width: 308px;
+    width: 438px;
   }
 
   .accountInfo__contacts__info div span {
@@ -3230,16 +3369,16 @@ input {
     font-size: 14px;
   }
 
-  .accountInfo__discount__content img {
-    max-width: 338px;
+  .accountInfo__history__header {
+    width: 698px;
   }
 
   .accountInfo__history__row {
-    width: 568px;
+    width: 698px;
   }
 
   .accountInfo__fine__content {
-    width: 338px;
+    width: 468px;
   }
 
   .notification__header ul {
@@ -3255,21 +3394,6 @@ input {
 
   .orders__item-dateInfo span {
     font-size: 14px;
-  }
-
-  .orderDetails__card {
-    padding: 20px 15px;
-    width: 289px;
-  }
-
-  .orderDetails__card-info img {
-    height: 90px;
-    width: 90px;
-  }
-
-  .statystic__productCard {
-    width: 356px;
-    height: 144px;
   }
 
   .statystic__productCard-description {
@@ -3294,11 +3418,13 @@ input {
   }
 }
 
-@media (max-width: 1440px) {
-  .wrapper {
-    padding-left: 270px;
+@media (max-width: 1876px) {
+  .sider {
+    display: none;
   }
+}
 
+@media (max-width: 1440px) {
   .header__input {
     width: 410px;
   }
@@ -3311,11 +3437,6 @@ input {
     font-size: 18px;
   }
 
-  .sider {
-    padding-right: 30px;
-    left: -80%;
-  }
-
   .accountInfo__title {
     margin-top: 30px;
   }
@@ -3325,7 +3446,7 @@ input {
   }
 
   .accountInfo__section__wrapper {
-    width: 900px;
+    width: 1140px;
   }
 
   .accountInfo__section__container {
@@ -3354,11 +3475,15 @@ input {
   }
 
   .accountInfo__discount__content img {
-    max-width: 383px;
+    max-width: 420px;
+  }
+
+  .accountInfo__history__header {
+    width: 623px;
   }
 
   .accountInfo__history__row {
-    width: 848px;
+    width: 623px;
   }
 
   .accountInfo__fine__content {
@@ -3461,12 +3586,7 @@ input {
   }
 
   .statystic__productCard {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    width: 225px;
-    height: auto;
+    width: 48%;
   }
 
   .products__input {
@@ -3504,10 +3624,6 @@ input {
 }
 
 @media (max-width: 1200px) {
-  .wrapper {
-    padding-left: 220px;
-  }
-
   .container {
     max-width: 970px;
   }
@@ -3550,29 +3666,28 @@ input {
     font-size: 16px;
   }
 
-  .sider {
-    padding-right: 20px;
-    left: -77%;
-  }
-
   .accountInfo__section__wrapper {
-    width: 720px;
+    width: 910px;
   }
 
   .accountInfo__section__container {
     padding: 15px 15px 10px 15px;
   }
 
+  .accountInfo__section__container:nth-child(1) {
+    width: 100%;
+  }
+
+  .accountInfo__section__container:nth-child(2) {
+    width: 50%;
+  }
+
   .accountInfo__section__container:nth-child(3) {
-    -webkit-box-ordinal-group: 5;
-        -ms-flex-order: 4;
-            order: 4;
+    width: 100%;
   }
 
   .accountInfo__section__container:nth-child(4) {
-    -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+    width: 45%;
   }
 
   .accountInfo__contacts__content img {
@@ -3580,19 +3695,16 @@ input {
     height: 180px;
   }
 
-  .accountInfo__contacts__content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-
   .accountInfo__discount__content img {
     max-width: 313px;
   }
 
+  .accountInfo__history__header {
+    width: 100%;
+  }
+
   .accountInfo__history__row {
-    width: 688px;
+    width: 100%;
   }
 
   .accountInfo__fine__content {
@@ -3681,7 +3793,7 @@ input {
     height: 24px;
   }
 
-  .report__navigationItem span {
+  .report__navigationItem span:last-child {
     display: none;
   }
 
@@ -3728,7 +3840,7 @@ input {
             flex-direction: row;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 15px;
+    gap: 20px;
   }
 
   .orders__filterList ul li {
@@ -3767,7 +3879,12 @@ input {
   }
 
   .statystic__productCard {
-    width: 225px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 252px;
+    height: auto;
   }
 
   .products__header div button {
@@ -3791,10 +3908,6 @@ input {
 }
 
 @media (max-width: 992px) {
-  .wrapper {
-    padding-left: 0;
-  }
-
   .container {
     max-width: 750px;
   }
@@ -3873,10 +3986,6 @@ input {
     font-size: 12px;
   }
 
-  .sider {
-    display: none;
-  }
-
   .accountInfo__section__wrapper {
     width: 100%;
   }
@@ -3923,10 +4032,12 @@ input {
 
   .products__input {
     width: 60%;
+    font-size: 14px;
   }
 
   .products__select {
     width: 60%;
+    font-size: 14px;
   }
 
   .product__select-sort {
@@ -3940,14 +4051,105 @@ input {
   }
 }
 
+@media (max-width: 787px) {
+  .accountInfo__section__description {
+    font-size: 18px;
+  }
+
+  .accountInfo__section__description div {
+    font-size: 10px;
+  }
+
+  .accountInfo__contacts__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .accountInfo__contacts__info div {
+    width: 438px;
+  }
+
+  .accountInfo__contacts__info div span {
+    width: 80px;
+    font-size: 12px;
+  }
+
+  .accountInfo__contacts__info div p {
+    font-size: 12px;
+  }
+
+  .accountInfo__contacts__info div ul li {
+    font-size: 10px;
+  }
+
+  .accountInfo__contacts__info div a {
+    font-size: 12px;
+  }
+
+  .report__inner {
+    margin-top: 20px;
+  }
+
+  .report__navigationItem__badge {
+    width: 12px;
+    height: 12px;
+    top: 20px;
+    right: 0;
+  }
+
+  .transactionHistory__container {
+    font-size: 10px;
+  }
+
+  .reviews__table {
+    font-size: 12px;
+  }
+
+  .orders_inner {
+    margin-top: 30px;
+  }
+
+  .orders__filterList {
+    padding: 10px;
+  }
+
+  .orders__filterList ul li label {
+    font-size: 10px;
+    text-align: center;
+  }
+
+  .statystic__inner {
+    margin-top: 20px;
+  }
+
+  .products__inner {
+    margin-top: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   .accountInfo__discount__content img {
     max-width: 100%;
   }
 
+  .accountInfo__history__header {
+    width: 100%;
+    font-size: 10px;
+  }
+
+  .accountInfo__history__header a span {
+    display: none;
+  }
+
   .accountInfo__history__row {
     width: 100%;
     font-size: 10px;
+  }
+
+  .accountInfo__history__row a span {
+    display: none;
   }
 
   .accountInfo__history span {
@@ -4042,7 +4244,19 @@ input {
     margin-top: 20px;
   }
 
-  .accountInfo__section__container {
+  .accountInfo__section__container:nth-child(1) {
+    width: 100%;
+  }
+
+  .accountInfo__section__container:nth-child(2) {
+    width: 100%;
+  }
+
+  .accountInfo__section__container:nth-child(3) {
+    width: 100%;
+  }
+
+  .accountInfo__section__container:nth-child(4) {
     width: 100%;
   }
 
@@ -4130,6 +4344,7 @@ input {
   }
 
   .commentContainer__response div {
+    height: auto;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -4144,16 +4359,26 @@ input {
     display: none;
   }
 
+  .commentContainer__response div button {
+    height: 40px;
+  }
+
   .commentContainer__title {
     font-size: 24px;
   }
 
+  .newReport__form {
+    margin-left: 10px;
+  }
+
   .newReport__form input {
+    font-size: 12px;
     padding-left: 10px;
     height: 40px;
   }
 
   .newReport__form textarea {
+    font-size: 12px;
     padding-left: 10px;
     padding-top: 8px;
   }
@@ -4166,7 +4391,7 @@ input {
   }
 
   .notification__header ul {
-    margin-top: 10px;
+    margin-top: 30px;
   }
 
   .transactionHistory__inner {
@@ -4176,7 +4401,6 @@ input {
 
   .reviews__inner {
     padding: 10px;
-    overflow: auto;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -4208,6 +4432,7 @@ input {
 
   .fine__inner {
     padding: 10px;
+    margin-top: 20px;
   }
 
   .fine__table th,
@@ -4339,10 +4564,12 @@ input {
 
   .products__input {
     width: 100%;
+    font-size: 12px;
   }
 
   .products__select {
     width: 100%;
+    font-size: 12px;
   }
 
   .product__select-sort {
@@ -4387,6 +4614,7 @@ input {
   }
 
   .addProduct__inner {
+    margin-top: 20px;
     padding: 20px;
   }
 
@@ -4417,11 +4645,13 @@ input {
   .addProduct__input {
     padding: 0 15px;
     height: 40px;
+    font-size: 12px;
   }
 
   .addProduct__select {
     height: 40px;
     padding: 0 10px;
+    font-size: 12px;
   }
 
   .addProduct__size-container {
@@ -4466,6 +4696,20 @@ input {
   .header__dropdown {
     width: 145px;
     padding-bottom: 10px;
+  }
+
+  .commentContainer img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .commentContainer__info a {
+    width: 150px;
+    text-overflow: ellipsis;
+  }
+
+  .reviews__table {
+    font-size: 10px;
   }
 
   .statystic__header div span {

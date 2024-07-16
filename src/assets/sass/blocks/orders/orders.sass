@@ -2,9 +2,12 @@
  border: 1px solid $grayBorder
  border-radius: 5px
  display: flex 
- padding-bottom: 20px 
+ padding-bottom: 20px
+ margin-top: 50px  
  @media(max-width: 1200px) 
   flex-direction: column	
+ @media(max-width: 787px) 
+  margin-top: 30px 
 
 .orders__filterList 
  height: auto	
@@ -23,34 +26,69 @@
   gap: 12px
   li
    display: flex
-   align-items: center
+   align-items: center		 
    gap: 15px 	 	 	
-   input		
-    border: 1px solid $grayBorder
-    border-radius: 5px
+   input[type="checkbox"]
     width: 22px
     height: 22px
+    position: absolute
+    opacity: 0
+    cursor: pointer		
    label
+    width: 100px
+    height: 30px
+    display: flex
+    align-items: center								
     font-size: 14px
-    color: $blackTitle			
+    color: $blackTitle		
+    position: relative	
+    cursor: pointer	
+    padding-left: 40px		
+    &:before 			 
+     content: ""
+     position: absolute
+     left: 10px
+     top: 50%
+     transform: translateY(-50%)
+     width: 22px
+     height: 22px
+     border: 1px solid $grayBorder
+     border-radius: 5px
+     background-color: white		
+   input[type="checkbox"]:checked + label:before 
+    content: "✓"
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 14px
+    color: $blackTitle
+    background-color: $white			
  @media(max-width: 1440px)
   padding: 20px
   ul
    li
     input		
      width: 20px
-     height: 20px
+     height: 20px	 
     label
      font-size: 12px	
  @media(max-width: 1200px) 
    ul	
     flex-direction: row	
-    flex-wrap: wrap
-    gap: 15px	
+    flex-wrap: wrap	
+    gap: 20px	
     li			
      width: 70px				
      flex-direction: column				
      gap: 5px
+ @media(max-width: 787px) 
+  padding: 10px
+  ul	
+   li			
+    label
+     font-size: 10px 
+     text-align: center		 
+
 
 .orders__container
  padding: 40px	
@@ -88,9 +126,14 @@
  width: fit-content
  padding: 8px 17px 	
  background: rgba(133, 133, 133, 0.1)
- text-transform: uppercase
- font-family: 'inter-bold'
- color: $blackTitle 
+ select
+  border: none	
+  background-color: inherit	
+  font-size: 13px 
+  text-transform: uppercase
+  font-family: 'inter-bold'
+  color: $blackTitle  	
+  background: rgba(133, 133, 133, 0.01)
  div
   border-radius: 500px
   width: 6px
@@ -108,15 +151,24 @@
  div
   background-color: $finishedGreen 	
  img
-  color: $finishedGreen			
+  color: $finishedGreen		
+ select
+  color: $finishedGreen	
+  background-color: rgba($finishedGreenBg, 0.01)
+					
 
 .orders__item-status__refund
  color: $red	
- background-color: $redBg	
+ background-color: $redBg	 
  div
   background-color: $red 	
  img
-  color: $red		
+  color: $red
+ select
+  color: $red	
+  background-color: rgba($redBg, 0.01)
+			
+ 			
 
 .orders__item-dateInfo
  margin-top: 12px	
@@ -175,6 +227,7 @@
   color: $purple
   background-color: inherit	 	
   display: flex		
+  text-align: left	
   img
    width: 14px		
    margin-right: 7px 	

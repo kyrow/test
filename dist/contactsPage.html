@@ -125,7 +125,7 @@
 
 	<div class="accountInfo__section__wrapper">
 
-		<div class="accountInfo__section__container">
+		<div class="accountInfo__section__container accountInfo__section-container__active ">
 			<h2>контактные данные</h2>
 			<div class="accountInfo__divider"></div>
 			<div class="accountInfo__section__description">
@@ -155,20 +155,26 @@
 					</div>
 					<div>
 						<span>Адреса складов</span>
-						<p>г. Алматы, ул. Кабдолова, 16
-							г. Алматы, ул. Жамбыла, 258
-							г. Актобе, ул. Гиззата Ибатова, 575</p>
+						<ul>
+							<li>г. Алматы, ул. Кабдолова, 16</li>
+							<li>г. Алматы, ул. Жамбыла, 258</li>
+							<li>г. Актобе, ул. Гиззата Ибатова, 575</li>
+						</ul>
 					</div>
-					<a href="#">Посмотреть все склады</a>
+					<div>
+						<span></span>
+						<a href="#">Посмотреть все склады</a>
+					</div>
+
 				</div>
 			</div>
 			<div class="accountInfo__divider"></div>
 			<div class="accountInfo__contacts__additional">
 				<a href="#">
-					<img src="../../assets/img/icons/lock.png" />
+					<img src="@/lock.png" />
 					Сменить пароль</a>
 				<a href="#">
-					<img src="../../assets/img/icons/pen.png" />
+					<img src="@/pen.png" />
 					Редактировать личные данные</a>
 			</div>
 		</div>
@@ -210,7 +216,7 @@
 			<div class="accountInfo__divider"></div>
 
 			<div class="accountInfo__history__content">
-				<div class="accountInfo__history__row">
+				<div class="accountInfo__history__header">
 					<span>Статус</span>
 					<span>№ заказа</span>
 					<span>Наименование</span>
@@ -228,7 +234,9 @@
 					<span>Халаты</span>
 					<span>
 						12 344 ₸
-						<a>Подробнее »</a>
+						<a>
+							Подробнее »
+						</a>
 					</span>
 				</div>
 
