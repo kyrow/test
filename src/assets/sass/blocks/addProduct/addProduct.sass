@@ -139,12 +139,18 @@
    font-family: 'inter'		
    color: $blackTitle	 				
  textarea
+  font-size: 16px	
   resize: none
   width: 100%	
   border: 1px solid $grayInputBorder
   padding: 25px 
   border-radius: 5px	
-  height: 200px		 
+  height: 200px	
+  @media(max-width: 767px)
+   font-size: 12px
+   padding: 10px	 
+   height: 100px	 
+
 
 .addProduct__characteristic-container
  display: flex

@@ -187,6 +187,7 @@
 								<option>В пути</option>
 								<option>Выполнено</option>
 							</select>
+							<img id="chevron-icon" src="../../../assets/img/icons/chevronRed.svg" alt="chevron" />
 						</div>
 
 						<div class="orders__item-dateInfo">
@@ -228,13 +229,14 @@
 					<div class="orders__item-info">
 
 
-						<div class="orders__item-status ">
+						<div class="orders__item-status">
 							<div></div>
 							<select>
-								<option>В пути</option>
-								<option>Выполнено</option>
-								<option>Возврат</option>
+								<option value="">В пути</option>
+								<option value="">Выполнено</option>
+								<option value="">Возврат</option>
 							</select>
+							<img id="chevron-icon" src="../../../assets/img/icons/chevron.svg" alt="chevron" />
 						</div>
 
 						<div class="orders__item-dateInfo">
@@ -283,6 +285,8 @@
 								<option>Возврат</option>
 								<option>В пути</option>
 							</select>
+							<img id="chevron-icon" src="../../../assets/img/icons/chevronGreen.svg" alt="chevron" />
+
 						</div>
 
 						<div class="orders__item-dateInfo">
@@ -343,6 +347,20 @@
 		</div>
 
 	</div>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const chevronIcon = document.getElementById('chevron-icon');
+			const selectElement = chevronIcon.previousElementSibling;
+
+			chevronIcon.addEventListener('click', () => {
+				selectElement.focus();
+				selectElement.click(); // This line is necessary for some browsers
+			});
+		});
+
+	</script>
+
 </body>
 
 </html>
